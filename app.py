@@ -512,6 +512,30 @@ def create_app(config_name=None):
         db.session.commit()
         return jsonify({"status": "success", "is_favorite": gen.is_favorite})
 
+    # ── Delete Generation ──────────────────────────────────────────
+    @main_bp.route("/generation/<int:gen_id>", methods=["DELETE"])
+    def delete_generation(gen_id):
+        gen = Generation.query.get_or_404(gen_id)
+        store = get_store()
+        if not store or gen.store_id != store.id:
+            return jsonify({"error": "Not authorized"}), 403
+
+        # Delete the file from disk
+        if gen.image_path:
+            output_dir = get_store_output_dir(store.id) if store else app.config["OUTPUT_FOLDER"]
+            file_path = os.path.join(output_dir, gen.image_path)
+            try:
+                if os.path.exists(file_path):
+                    os.remove(file_path)
+            except Exception as e:
+                logger.warning(f"Could not delete file {file_path}: {e}")
+
+        product_name = gen.product_name
+        db.session.delete(gen)
+        db.session.commit()
+        log_activity(db.session, "image_deleted", product_name, store_id=store.id)
+        return jsonify({"status": "success"})
+
     # ── Store Profile ──────────────────────────────────────────────
     @main_bp.route("/settings/store-profile", methods=["GET"])
     def get_store_profile():

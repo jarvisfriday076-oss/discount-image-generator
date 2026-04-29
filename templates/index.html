@@ -179,6 +179,22 @@
         </div>
     </aside>
 
+    <!-- Mobile bottom nav (only visible on screens < 768px) -->
+    <nav class="ws-mobile-nav" aria-label="Primary navigation">
+        <button class="ws-nav-btn active" data-tab="create" onclick="switchTab('create')" aria-label="Create">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            <span>Create</span>
+        </button>
+        <button class="ws-nav-btn" data-tab="post" onclick="switchTab('post')" aria-label="Post">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            <span>Post</span>
+        </button>
+        <button class="ws-nav-btn" data-tab="repository" onclick="switchTab('repository')" aria-label="Repository">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg>
+            <span>Library</span>
+        </button>
+    </nav>
+
     <!-- Main Content -->
     <main class="ws-main">
         <div class="ws-main-inner">
@@ -1676,6 +1692,21 @@ function closeLightbox() {
     }
 }
 
+async function deleteGeneration(id, displayName) {
+    if (!confirm(`Permanently delete "${displayName}"?\n\nThis removes the file from disk AND the database row. Cannot be undone.`)) return;
+    try {
+        const resp = await fetch(`/generation/${id}`, { method: 'DELETE' });
+        if (resp.ok) {
+            loadGallery();
+        } else {
+            const data = await resp.json().catch(() => ({}));
+            alert('Delete failed: ' + (data.error || `status ${resp.status}`));
+        }
+    } catch (e) {
+        alert('Delete failed: ' + e.message);
+    }
+}
+
 async function loadGallery() {
     try {
         const resp = await fetch('/gallery');
@@ -1725,9 +1756,12 @@ async function loadGallery() {
                         ${mediaEl}
                         <div class="repo-card-overlay">
                             <div class="repo-card-actions">
-                                <a class="repo-action-btn" href="/output/${img.filename}" download onclick="event.stopPropagation()">
+                                <a class="repo-action-btn" href="/output/${img.filename}" download onclick="event.stopPropagation()" title="Download">
                                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
                                 </a>
+                                <button class="repo-action-btn delete" onclick="event.stopPropagation(); deleteGeneration(${img.id})" title="Delete permanently">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3 6 5 6 21 6"/><path d="M19 6l-2 14a2 2 0 01-2 2H9a2 2 0 01-2-2L5 6"/><path d="M10 11v6"/><path d="M14 11v6"/><path d="M9 6V4a2 2 0 012-2h2a2 2 0 012 2v2"/></svg>
+                                </button>
                             </div>
                         </div>
                         <div class="repo-card-badge left">
