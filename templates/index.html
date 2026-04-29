@@ -1,0 +1,2370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bottela AI | Premium Liquor Promotion Generator</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Background Effects -->
+<div class="bg-effects">
+    <div class="bg-orb bg-orb--1"></div>
+    <div class="bg-orb bg-orb--2"></div>
+    <div class="bg-orb bg-orb--3"></div>
+</div>
+
+<!-- ==================== LANDING PAGE ==================== -->
+<div id="landingPage" class="landing-page">
+
+    <!-- Powered Badge -->
+    <div class="landing-badge">
+        <div class="badge-icon">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l1.5 5.5L19 10l-5.5 1.5L12 17l-1.5-5.5L5 10l5.5-1.5z"/><path d="M18 2l.5 2 2 .5-2 .5L18 7l-.5-2-2-.5 2-.5z"/></svg>
+        </div>
+        <span>Powered by Advanced AI</span>
+    </div>
+
+    <!-- Hero -->
+    <div class="landing-hero">
+        <h1><span class="text-white">Bottela</span> <span class="text-gradient">AI</span></h1>
+        <p>Transform your liquor store marketing with stunning AI-generated promotional content. Create professional posters in seconds.</p>
+    </div>
+
+    <!-- Module Cards -->
+    <div class="module-cards">
+        <!-- Festival Sale -->
+        <div class="module-card module-card--festival" onclick="navigateTo('festival')">
+            <div class="card-glow"></div>
+            <div class="card-index">01</div>
+            <div class="module-card-icon">
+                <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            </div>
+            <div class="module-card-content">
+                <h3>Festival Sale</h3>
+                <p>Themed promotions for regional and global festivals. Diwali, New Year, Christmas & more.</p>
+                <div class="module-card-arrow">
+                    <span>Start Creating</span>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+                </div>
+            </div>
+        </div>
+
+        <!-- Discount Promos -->
+        <div class="module-card module-card--discount" onclick="navigateTo('discount')">
+            <div class="card-glow"></div>
+            <div class="card-index">02</div>
+            <div class="module-card-icon">
+                <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.59 13.41l-7.17 7.17a2 2 0 01-2.83 0L2 12V2h10l8.59 8.59a2 2 0 010 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg>
+            </div>
+            <div class="module-card-content">
+                <h3>Discount Promos</h3>
+                <p>Price-focused marketing to drive immediate sales. Highlight deals and savings.</p>
+                <div class="module-card-arrow">
+                    <span>Start Creating</span>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+                </div>
+            </div>
+        </div>
+
+        <!-- Brand Story -->
+        <div class="module-card module-card--generic" onclick="navigateTo('generic')">
+            <div class="card-glow"></div>
+            <div class="card-index">03</div>
+            <div class="module-card-icon">
+                <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3l1.5 5.5L19 10l-5.5 1.5L12 17l-1.5-5.5L5 10l5.5-1.5z"/><path d="M18 2l.5 2 2 .5-2 .5L18 7l-.5-2-2-.5 2-.5z"/></svg>
+            </div>
+            <div class="module-card-content">
+                <h3>Brand Story</h3>
+                <p>Elegant, lifestyle-focused generic brand promotions. Build your brand identity.</p>
+                <div class="module-card-arrow">
+                    <span>Start Creating</span>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Features -->
+    <div class="features-grid">
+        <div class="feature-card">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 4V2M15 16v-2M8 9h2M20 9h2M17.8 11.8L19 13M17.8 6.2L19 5M12.2 11.8L11 13M12.2 6.2L11 5M15 12a3 3 0 100-6 3 3 0 000 6zM6 21v-2a4 4 0 014-4h4"/></svg>
+            <h4>AI-Powered</h4>
+            <p>Smart generation</p>
+        </div>
+        <div class="feature-card">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="7" width="20" height="15" rx="2"/><polyline points="17 2 12 7 7 2"/></svg>
+            <h4>Multiple Formats</h4>
+            <p>Posters & stories</p>
+        </div>
+        <div class="feature-card">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+            <h4>Social Ready</h4>
+            <p>One-click posting</p>
+        </div>
+        <div class="feature-card">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg>
+            <h4>Asset Library</h4>
+            <p>All your creations</p>
+        </div>
+    </div>
+</div>
+
+<!-- ==================== WORKSPACE ==================== -->
+<div id="workspace" class="workspace">
+
+    <!-- Sidebar -->
+    <aside class="ws-sidebar">
+        <div class="ws-sidebar-header">
+            <button class="ws-back-btn" onclick="goBack()">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+            </button>
+            <div class="ws-header-divider"></div>
+            <div class="ws-module-label">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l1.5 5.5L19 10l-5.5 1.5L12 17l-1.5-5.5L5 10l5.5-1.5z"/></svg>
+                <span id="sidebarModuleName">Festival AI</span>
+            </div>
+        </div>
+
+        <nav class="ws-sidebar-nav">
+            <div class="ws-nav-label">Workspace</div>
+            <button class="ws-nav-btn active" data-tab="create" onclick="switchTab('create')">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                <span>Create</span>
+                <div class="ws-nav-dot"></div>
+            </button>
+            <button class="ws-nav-btn" data-tab="post" onclick="switchTab('post')">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                <span>Post</span>
+                <div class="ws-nav-dot"></div>
+            </button>
+            <button class="ws-nav-btn" data-tab="repository" onclick="switchTab('repository')">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg>
+                <span>Repository</span>
+                <div class="ws-nav-dot"></div>
+            </button>
+        </nav>
+
+        <!-- Usage Stats -->
+        <div class="ws-usage-card">
+            <div class="ws-usage-label">Weekly Usage</div>
+            <div class="ws-usage-row">
+                <span>Generations</span>
+                <span id="usageCount">{{ store.generations_this_week if store else 0 }} / {{ store.weekly_limit if store else 50 }}</span>
+            </div>
+            <div class="ws-usage-track">
+                <div class="ws-usage-bar" id="usageBar" style="width: {{ ((store.generations_this_week / store.weekly_limit * 100) if store and store.weekly_limit > 0 else 0)|int }}%"></div>
+            </div>
+            <div class="ws-usage-hint" id="usageHint">{{ store.remaining_generations if store else 50 }} generations remaining this week</div>
+        </div>
+
+        <!-- Store Info -->
+        <div class="ws-store-info" style="padding:12px 16px;border-top:1px solid var(--border);margin-top:auto;">
+            <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;">
+                <div style="width:32px;height:32px;border-radius:8px;background:linear-gradient(135deg,#6366f1,#a855f7);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:14px;color:white;">
+                    {{ user.username[0]|upper if user else 'S' }}
+                </div>
+                <div>
+                    <div style="font-size:13px;font-weight:600;">{{ store.store_name if store else 'Store' }}</div>
+                    <div style="font-size:11px;color:var(--text-muted);">{{ user.username if user else '' }} &middot; <span style="display:inline;padding:1px 6px;border-radius:4px;font-size:10px;font-weight:600;background:rgba(99,102,241,0.15);color:#818cf8;">FREE</span></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Settings & Logout -->
+        <div style="display:flex;gap:8px;padding:0 16px 16px;">
+            <button class="ws-settings-btn" onclick="openSettings()" style="flex:1;">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-2 2 2 2 0 01-2-2v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83 0 2 2 0 010-2.83l.06-.06A1.65 1.65 0 004.68 15a1.65 1.65 0 00-1.51-1H3a2 2 0 01-2-2 2 2 0 012-2h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 010-2.83 2 2 0 012.83 0l.06.06A1.65 1.65 0 009 4.68a1.65 1.65 0 001-1.51V3a2 2 0 012-2 2 2 0 012 2v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 0 2 2 0 010 2.83l-.06.06A1.65 1.65 0 0019.32 9a1.65 1.65 0 001.51 1H21a2 2 0 012 2 2 2 0 01-2 2h-.09a1.65 1.65 0 00-1.51 1z"/></svg>
+                <span>Settings</span>
+            </button>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="ws-main">
+        <div class="ws-main-inner">
+
+            <!-- ====== CREATE TAB ====== -->
+            <div id="tabCreate" class="ws-tab active">
+                <div class="create-layout">
+
+                    <!-- LEFT: Form -->
+                    <div class="create-form">
+                        <div class="section-header">
+                            <h2>Create Promotion</h2>
+                            <p>Fill in the details to generate your AI assets</p>
+                        </div>
+
+                        <!-- Mode Toggle (discount only) -->
+                        <div id="modeToggle" class="mode-toggle hidden">
+                            <button class="mode-toggle-btn active" onclick="setMode('single')">Single</button>
+                            <button class="mode-toggle-btn" onclick="setMode('bulk')">Bulk Upload</button>
+                        </div>
+
+                        <!-- Single Mode Form -->
+                        <div id="singleForm">
+                            <!-- Festival Selector (searchable dropdown) -->
+                            <div id="festivalSelector" class="festival-selector hidden">
+                                <label>
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                                    Select Festival
+                                </label>
+                                <div class="festival-dropdown" style="position:relative;">
+                                    <!-- Search input -->
+                                    <div id="festivalSelected" onclick="toggleFestivalDropdown()" style="display:flex;align-items:center;gap:10px;padding:10px 14px;background:var(--bg-input);border:1px solid var(--border);border-radius:var(--radius-sm);cursor:pointer;transition:border-color 0.2s;">
+                                        <span id="festivalSelectedText" style="flex:1;color:var(--text-muted);font-size:0.9rem;">Choose a festival...</span>
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="opacity:0.5;"><path d="M6 9l6 6 6-6"/></svg>
+                                    </div>
+                                    <!-- Dropdown panel -->
+                                    <div id="festivalDropdown" style="display:none;position:absolute;top:calc(100% + 4px);left:0;right:0;background:#18181b;border:1px solid var(--border);border-radius:var(--radius-sm);z-index:50;max-height:280px;overflow:hidden;box-shadow:0 8px 30px rgba(0,0,0,0.5);">
+                                        <div style="padding:8px;border-bottom:1px solid var(--border);">
+                                            <input type="text" id="festivalSearchInput" placeholder="Search festivals..." oninput="filterFestivals(this.value)" style="width:100%;padding:8px 12px;font-size:0.85rem;background:rgba(255,255,255,0.05);border:1px solid var(--border);border-radius:6px;color:var(--text-primary);font-family:var(--font);outline:none;" autocomplete="off">
+                                        </div>
+                                        <div id="festivalList" style="overflow-y:auto;max-height:220px;">
+                                            {% for key, fest in festivals.items() %}
+                                            <button type="button" class="festival-btn" data-festival="{{ key }}" onclick="selectFestival(this, '{{ key }}')" style="display:flex;align-items:center;gap:10px;width:100%;padding:10px 14px;background:none;border:none;color:var(--text-primary);cursor:pointer;font-family:var(--font);font-size:0.9rem;text-align:left;transition:background 0.15s;" onmouseenter="this.style.background='rgba(255,255,255,0.06)'" onmouseleave="this.style.background='none'">
+                                                <span class="fest-emoji" style="font-size:1.3rem;width:28px;text-align:center;">{{ fest.emoji }}</span>
+                                                <span class="fest-name">{{ fest.name }}</span>
+                                            </button>
+                                            {% endfor %}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-fields">
+                                <!-- Product Name -->
+                                <div class="field-group" style="grid-column: span 2;">
+                                    <label>
+                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.59 13.41l-7.17 7.17a2 2 0 01-2.83 0L2 12V2h10l8.59 8.59a2 2 0 010 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg>
+                                        Product Name
+                                    </label>
+                                    <input type="text" id="productName" class="field-input" placeholder="e.g. Premium Single Malt Whiskey" oninput="updatePreview()">
+                                </div>
+
+                                <div class="field-row">
+                                    <!-- Size/Volume -->
+                                    <div class="field-group">
+                                        <label>Size / Volume</label>
+                                        <input type="text" id="productSize" class="field-input" placeholder="750ml" oninput="updatePreview()">
+                                    </div>
+
+                                    <!-- Original Price (hidden for generic) -->
+                                    <div class="field-group" id="fieldOriginalPrice">
+                                        <label>Original Price</label>
+                                        <input type="number" id="originalPrice" class="field-input" placeholder="$59.99" step="0.01" oninput="updatePreview()">
+                                    </div>
+                                </div>
+
+                                <!-- Discount Price / Pct (hidden for generic) -->
+                                <div class="field-row" id="fieldDiscountRow">
+                                    <div class="field-group">
+                                        <label>Discount %</label>
+                                        <input type="number" id="discountPct" class="field-input" placeholder="20" min="1" max="99" oninput="updatePreview()">
+                                    </div>
+                                    <div class="field-group">
+                                        <label>Discounted Price</label>
+                                        <input type="text" id="discountedPrice" class="field-input" placeholder="Auto-calculated" readonly>
+                                    </div>
+                                </div>
+
+                                <!-- Product Image Upload -->
+                                <div class="field-group" style="grid-column: span 2;">
+                                    <label>
+                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+                                        Product Image
+                                    </label>
+                                    <div class="product-image-section">
+                                        <div class="image-uploader" id="productUploader" onclick="document.getElementById('productImageInput').click()" ondragover="event.preventDefault(); this.classList.add('dragging')" ondragleave="this.classList.remove('dragging')" ondrop="handleProductImageDrop(event)">
+                                            <input type="file" id="productImageInput" accept="image/*" style="display:none" onchange="handleProductImageUpload(this)">
+                                            <div id="productUploadContent">
+                                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+                                                <p>Upload product image or drag & drop</p>
+                                                <p class="upload-hint">PNG, JPG up to 10MB. Leave empty to auto-search.</p>
+                                            </div>
+                                            <div id="productUploadPreview" class="hidden" style="position:relative;width:100%;text-align:center;">
+                                                <img id="productPreviewThumb" style="max-height:120px;border-radius:8px;" alt="Product">
+                                                <button type="button" class="post-img-remove" onclick="event.stopPropagation();removeProductImage()" title="Remove">&times;</button>
+                                            </div>
+                                        </div>
+                                        <!-- Auto-search results -->
+                                        <div id="productSearchResults" class="hidden" style="margin-top:8px;">
+                                            <div class="post-recent-label">Auto-found images (click to select):</div>
+                                            <div class="post-recent-grid" id="productSearchGrid"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Hidden fields for store profile (loaded from settings) -->
+                                <input type="hidden" id="storeName" value="">
+                                <input type="hidden" id="productImageUrl" value="">
+
+                                <!-- Output Type (video disabled for now) -->
+                                <div class="output-type-toggle" style="display:none;">
+                                    <label class="toggle-label">Output Type</label>
+                                    <div class="toggle-group">
+                                        <button type="button" class="toggle-btn active" id="togglePhoto" onclick="setOutputType('photo')">
+                                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+                                            Photo
+                                        </button>
+                                        <button type="button" class="toggle-btn" id="toggleVideo" onclick="setOutputType('video')">
+                                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg>
+                                            Video
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <!-- Format Selector -->
+                                <div class="output-type-toggle">
+                                    <label class="toggle-label">Format</label>
+                                    <div class="toggle-group">
+                                        <button type="button" class="toggle-btn active" id="fmtPost" onclick="setFormat('post')">
+                                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/></svg>
+                                            Post (1:1)
+                                        </button>
+                                        <button type="button" class="toggle-btn" id="fmtStory" onclick="setFormat('story')">
+                                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="6" y="2" width="12" height="20" rx="2"/></svg>
+                                            Story (9:16)
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <!-- Generate Buttons -->
+                                <div class="generate-section">
+                                    <button class="btn-generate" id="btnGenerate" onclick="handleGenerate()">
+                                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l1.5 5.5L19 10l-5.5 1.5L12 17l-1.5-5.5L5 10l5.5-1.5z"/></svg>
+                                        <span id="btnGenerateText">Generate Promotion</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Bulk Mode Form -->
+                        <div id="bulkForm" class="hidden">
+                            <div class="upload-zone" id="bulkUploadZone" onclick="document.getElementById('bulkFileInput').click()" ondragover="event.preventDefault(); this.classList.add('drag-over')" ondragleave="this.classList.remove('drag-over')" ondrop="handleBulkDrop(event)">
+                                <input type="file" id="bulkFileInput" accept=".csv,.xlsx,.xls" style="display:none" onchange="handleBulkSelect(this)">
+                                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+                                <h3>Upload CSV or Excel</h3>
+                                <p>Drag & drop your file here</p>
+                            </div>
+                            <div id="bulkFileInfo" class="file-info hidden"></div>
+
+                            <p class="upload-hint" style="margin-top:12px;color:var(--text-muted);">Store name & logo are auto-applied from Settings.</p>
+                            <div class="generate-section">
+                                <button class="btn-generate" id="btnBulkGenerate" onclick="handleBulkGenerate()">
+                                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l1.5 5.5L19 10l-5.5 1.5L12 17l-1.5-5.5L5 10l5.5-1.5z"/></svg>
+                                    <span>Generate All</span>
+                                </button>
+                            </div>
+                            <div id="bulkProgress" class="progress-card hidden">
+                                <div class="progress-header">
+                                    <h3>Generating...</h3>
+                                    <span class="progress-pct" id="bulkPct">0%</span>
+                                </div>
+                                <div class="progress-track"><div class="progress-bar" id="bulkBar"></div></div>
+                                <div class="progress-status" id="bulkStatus">Preparing...</div>
+                            </div>
+                            <div id="bulkResults" class="results-grid"></div>
+                        </div>
+                    </div>
+
+                    <!-- RIGHT: Preview Panel -->
+                    <div class="preview-panel">
+                        <div class="preview-canvas">
+                            <div class="preview-header">
+                                <h3>Live Preview</h3>
+                                <button class="preview-refresh" onclick="updatePreview()" title="Refresh">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 11-2.12-9.36L23 10"/></svg>
+                                </button>
+                            </div>
+
+                            <div class="preview-mockup" id="previewMockup">
+                                <!-- Instagram-style post mockup -->
+                                <div class="pv-post">
+                                    <!-- IG Header -->
+                                    <div class="pv-ig-header">
+                                        <div class="pv-ig-avatar" id="pvAvatar">
+                                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg>
+                                        </div>
+                                        <div class="pv-ig-meta">
+                                            <span class="pv-ig-name" id="pvIgName">Store Name</span>
+                                            <span class="pv-ig-sponsored">Sponsored</span>
+                                        </div>
+                                        <svg class="pv-ig-dots" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><circle cx="5" cy="12" r="2"/><circle cx="12" cy="12" r="2"/><circle cx="19" cy="12" r="2"/></svg>
+                                    </div>
+
+                                    <!-- Main visual area -->
+                                    <div class="pv-visual" id="pvVisual">
+                                        <!-- Background -->
+                                        <div class="pv-bg" id="previewGradient"></div>
+
+                                        <!-- Festival badge -->
+                                        <div class="pv-fest-badge" id="previewFestIcon" style="display:none"></div>
+
+                                        <!-- Discount badge -->
+                                        <div class="pv-discount-badge" id="pvDiscBadge" style="display:none">
+                                            <span class="pv-disc-num" id="pvDiscNum">0%</span>
+                                            <span class="pv-disc-label">OFF</span>
+                                        </div>
+
+                                        <!-- Product area -->
+                                        <div class="pv-product-area">
+                                            <div class="pv-bottle-icon" id="pvBottleIcon">
+                                                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="1"><path d="M8 2h8v4l2 2v12a2 2 0 01-2 2H8a2 2 0 01-2-2V8l2-2V2z"/><path d="M10 2v4M14 2v4"/></svg>
+                                            </div>
+                                            <h3 class="pv-product-name" id="previewName">Product Name</h3>
+                                            <p class="pv-product-size" id="previewSize" style="display:none"></p>
+                                        </div>
+
+                                        <!-- Prices -->
+                                        <div class="pv-prices" id="previewPrices" style="display:none">
+                                            <span class="pv-orig-price" id="previewOrigPrice"></span>
+                                            <span class="pv-sale-price" id="previewDiscPrice"></span>
+                                        </div>
+
+                                        <!-- CTA bar -->
+                                        <div class="pv-cta-bar">
+                                            <span class="pv-cta-text">SHOP NOW</span>
+                                            <span class="pv-store-name" id="previewStoreName"></span>
+                                        </div>
+                                    </div>
+
+                                    <!-- IG Actions -->
+                                    <div class="pv-ig-actions">
+                                        <div class="pv-ig-left">
+                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                                        </div>
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21l-7-5-7 5V5a2 2 0 012-2h10a2 2 0 012 2z"/></svg>
+                                    </div>
+
+                                    <!-- IG Caption preview -->
+                                    <div class="pv-ig-caption">
+                                        <span class="pv-ig-cap-name" id="pvCapName">store</span>
+                                        <span class="pv-ig-cap-text">Limited time offer! Shop now</span>
+                                    </div>
+                                </div>
+
+                                <!-- Generated image overlay (hidden by default) -->
+                                <img class="preview-generated-img" id="previewGenImg" style="display:none" src="" alt="">
+                                <video class="preview-generated-video" id="previewGenVideo" style="display:none" controls autoplay loop muted></video>
+                                <div class="preview-generated-overlay" id="previewGenOverlay" style="display:none"></div>
+                                <div class="preview-generated-info" id="previewGenInfo" style="display:none">
+                                    <h3 id="previewGenTitle"></h3>
+                                    <p>Ready for download</p>
+                                    <div class="preview-generated-actions">
+                                        <a class="btn-download" id="previewDownloadBtn" href="#" download>
+                                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                                            Download
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!-- Generation animation -->
+                                <div class="generation-scene" id="genScene" style="display:none">
+                                    <img src="/static/images/pour-hero.jpg" alt="" class="gen-ambient-bg">
+                                    <div class="gen-ambient-overlay"></div>
+                                    <div class="gen-particles" id="genParticles"></div>
+                                    <div class="gen-status-area">
+                                        <div class="gen-status-icon">
+                                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3l1.5 5.5L19 10l-5.5 1.5L12 17l-1.5-5.5L5 10l5.5-1.5z"/><path d="M18 2l.5 2 2 .5-2 .5L18 7l-.5-2-2-.5 2-.5z"/></svg>
+                                        </div>
+                                        <span class="gen-status-text" id="genStepLabel">Analyzing Design...</span>
+                                        <span class="gen-status-pct" id="genPct">0%</span>
+                                    </div>
+                                    <div class="gen-progress">
+                                        <div class="gen-progress-track">
+                                            <div class="gen-progress-bar" id="genBar"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Reveal sweeper glow -->
+                                <div class="reveal-sweeper" id="revealSweeper"></div>
+                                <!-- Naughty cleaning robot -->
+                                <div class="robo-cleaner" id="roboCleaner">
+                                    <div class="robo-antenna"><div class="robo-antenna-tip"></div></div>
+                                    <div class="robo-body">
+                                        <div class="robo-eye robo-eye-l"><div class="robo-pupil"></div></div>
+                                        <div class="robo-eye robo-eye-r"><div class="robo-pupil"></div></div>
+                                        <div class="robo-mouth"></div>
+                                    </div>
+                                    <div class="robo-arm">
+                                        <div class="robo-mop"></div>
+                                    </div>
+                                    <div class="robo-wheels">
+                                        <div class="robo-wheel"></div>
+                                        <div class="robo-wheel"></div>
+                                    </div>
+                                    <div class="robo-trail"></div>
+                                </div>
+                            </div>
+
+                            <!-- Hidden theme input (backend needs it) -->
+                            <input type="hidden" id="selectedTheme" value="flash_sale_gold">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ====== POST TAB ====== -->
+            <div id="tabPost" class="ws-tab">
+                <div class="post-layout">
+                    <div class="section-header">
+                        <h2>Publish & Share</h2>
+                        <p>Share your creation on social media platforms</p>
+                    </div>
+
+                    <div class="post-grid">
+                        <!-- Left settings -->
+                        <div style="display:flex;flex-direction:column;gap:24px;">
+
+                            <!-- Image Selection -->
+                            <div class="post-card">
+                                <div class="post-card-label">Select Image</div>
+                                <div class="post-image-selector">
+                                    <!-- Upload zone -->
+                                    <div class="post-upload-zone" id="postUploadZone"
+                                         ondrop="handlePostImageDrop(event)" ondragover="event.preventDefault();this.classList.add('dragging')" ondragleave="this.classList.remove('dragging')">
+                                        <input type="file" id="postImageInput" accept="image/*" style="display:none" onchange="handlePostImageSelect(this)">
+                                        <div class="post-upload-placeholder" id="postUploadPlaceholder" onclick="document.getElementById('postImageInput').click()">
+                                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+                                            <span>Upload image or drag & drop</span>
+                                            <span class="post-upload-hint">PNG, JPG up to 10MB</span>
+                                        </div>
+                                        <div class="post-upload-preview hidden" id="postUploadPreview">
+                                            <img id="postPreviewImg" alt="Selected">
+                                            <button class="post-img-remove" onclick="removePostImage()" title="Remove">&times;</button>
+                                        </div>
+                                    </div>
+                                    <!-- Recent images from gallery -->
+                                    <div class="post-recent-label">Or select from recent:</div>
+                                    <div class="post-recent-grid" id="postRecentGrid">
+                                        <!-- Filled by JS -->
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Platform Selection -->
+                            <div class="post-card">
+                                <div class="post-card-label">Select Platform</div>
+                                <div class="platform-grid">
+                                    <button class="platform-btn" data-platform="instagram" onclick="selectPlatform(this, 'instagram')">
+                                        <div class="platform-icon instagram">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                                        </div>
+                                        <span>Instagram</span>
+                                        <div class="coming-soon-badge">Coming Soon</div>
+                                    </button>
+                                    <button class="platform-btn" data-platform="linkedin" onclick="selectPlatform(this, 'linkedin')">
+                                        <div class="platform-icon linkedin">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                                        </div>
+                                        <span>LinkedIn</span>
+                                        <div class="coming-soon-badge">Coming Soon</div>
+                                    </button>
+                                    <button class="platform-btn" data-platform="tiktok" onclick="selectPlatform(this, 'tiktok')">
+                                        <div class="platform-icon tiktok">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/></svg>
+                                        </div>
+                                        <span>TikTok</span>
+                                        <div class="coming-soon-badge">Coming Soon</div>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- AI Caption -->
+                            <div class="post-card">
+                                <div class="caption-header">
+                                    <div class="post-card-label">AI Caption</div>
+                                    <button class="caption-regen" onclick="regenerateCaption()">
+                                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 11-2.12-9.36L23 10"/></svg>
+                                        Regenerate
+                                    </button>
+                                </div>
+                                <div class="caption-box" id="captionBox" contenteditable="true">
+                                    Upload an image to generate a caption...
+                                </div>
+                                <div class="caption-tags">
+                                    <button class="caption-tag" onclick="appendTag(this)">🍷 Cheers</button>
+                                    <button class="caption-tag" onclick="appendTag(this)">✨ Premium</button>
+                                    <button class="caption-tag" onclick="appendTag(this)">🏷️ Sale</button>
+                                    <button class="caption-tag" onclick="appendTag(this)">🎉 Celebrate</button>
+                                </div>
+                                <button class="caption-copy-btn" onclick="copyCaption()">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
+                                    Copy Caption
+                                </button>
+                            </div>
+
+                            <!-- Schedule -->
+                            <div class="post-card">
+                                <div class="post-card-label">Schedule Date & Time</div>
+                                <div class="schedule-row">
+                                    <input type="date" class="schedule-input" id="scheduleDate">
+                                    <input type="time" class="schedule-input" id="scheduleTime">
+                                </div>
+                            </div>
+
+                            <!-- Action Buttons -->
+                            <div class="post-action-buttons">
+                                <button class="btn-publish btn-schedule" onclick="schedulePost()">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                                    Schedule Post
+                                </button>
+                                <button class="btn-publish btn-post-now" onclick="handlePostNow()">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                                    Post Now
+                                </button>
+                            </div>
+
+                            <!-- Scheduled Posts Queue -->
+                            <div class="post-card scheduled-posts-section">
+                                <div class="scheduled-header">
+                                    <div class="post-card-label">Scheduled Posts</div>
+                                    <span class="scheduled-count" id="scheduledCount">0 posts</span>
+                                </div>
+                                <div id="scheduledPostsList">
+                                    <div class="scheduled-empty" id="scheduledEmpty">
+                                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                                        <p>No scheduled posts yet</p>
+                                        <span>Select an image, platform, and time to schedule</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Right: Phone Preview -->
+                        <div>
+                            <div class="post-card-label" style="margin-bottom:16px">Preview</div>
+                            <div class="phone-frame">
+                                <div class="phone-inner">
+                                    <div class="phone-notch"><div class="phone-notch-pill"></div></div>
+                                    <div class="phone-content">
+                                        <div class="phone-profile">
+                                            <div class="phone-avatar"></div>
+                                            <div>
+                                                <div class="phone-name-bar" id="phoneNameBar"></div>
+                                                <div class="phone-sub-bar"></div>
+                                            </div>
+                                        </div>
+                                        <div class="phone-image" id="phoneImageArea">
+                                            <svg id="phoneImagePlaceholder" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+                                            <img id="phonePreviewImage" class="hidden" alt="Preview">
+                                        </div>
+                                        <div class="phone-actions">
+                                            <div class="phone-action-dot"></div>
+                                            <div class="phone-action-dot"></div>
+                                            <div class="phone-action-dot"></div>
+                                        </div>
+                                        <div class="phone-caption-text" id="phoneCaptionText">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ====== REPOSITORY TAB ====== -->
+            <div id="tabRepository" class="ws-tab">
+                <div class="repo-header">
+                    <div class="section-header" style="margin-bottom:0">
+                        <h2>Your Gallery</h2>
+                        <p>All your generated promotions in one place</p>
+                    </div>
+                    <div class="repo-filters">
+                        <select class="repo-select" id="repoSort" onchange="loadGallery()">
+                            <option value="newest">Latest First</option>
+                            <option value="oldest">Oldest First</option>
+                            <option value="az">A-Z</option>
+                        </select>
+                        <select class="repo-select" id="repoFilter" onchange="loadGallery()">
+                            <option value="all">All Types</option>
+                            <option value="discount">Discount Only</option>
+                            <option value="generic">Generic Only</option>
+                        </select>
+                    </div>
+                </div>
+                <div id="repoContent"></div>
+            </div>
+
+        </div>
+    </main>
+</div>
+
+<!-- Settings Modal -->
+<div id="settingsModal" class="settings-overlay hidden">
+    <div class="settings-modal">
+        <div class="settings-header">
+            <h3>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-2 2 2 2 0 01-2-2v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83 0 2 2 0 010-2.83l.06-.06A1.65 1.65 0 004.68 15a1.65 1.65 0 00-1.51-1H3a2 2 0 01-2-2 2 2 0 012-2h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 010-2.83 2 2 0 012.83 0l.06.06A1.65 1.65 0 009 4.68a1.65 1.65 0 001-1.51V3a2 2 0 012-2 2 2 0 012 2v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 0 2 2 0 010 2.83l-.06.06A1.65 1.65 0 0019.32 9a1.65 1.65 0 001.51 1H21a2 2 0 012 2 2 2 0 01-2 2h-.09a1.65 1.65 0 00-1.51 1z"/></svg>
+                Settings
+            </h3>
+            <button class="settings-close" onclick="closeSettings()">&times;</button>
+        </div>
+        <div class="settings-body">
+            <!-- API Key Status (managed by admin) -->
+            <div class="settings-section">
+                <div class="settings-section-title">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 11-7.778 7.778 5.5 5.5 0 017.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4"/></svg>
+                    AI Generation
+                </div>
+                <div class="settings-key-status" id="settingsKeyStatus">
+                    <div class="settings-key-badge" id="settingsKeyBadge">
+                        <span class="settings-key-dot"></span>
+                        <span id="settingsKeyText">Checking...</span>
+                    </div>
+                </div>
+                <p class="settings-desc" style="margin-top:8px;">Configure your API key for AI image generation.</p>
+            </div>
+
+            <!-- Store Profile Section -->
+            <div class="settings-section">
+                <div class="settings-section-title">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                    Store Profile
+                </div>
+                <p class="settings-desc">Your store name and logo will be automatically used in all generated promotions.</p>
+
+                <div class="field-group" style="margin-top:12px;">
+                    <label style="color:var(--text-muted);font-size:0.85rem;">Store Name</label>
+                    <input type="text" id="settingsStoreName" class="settings-input" placeholder="Enter your store name">
+                </div>
+
+                <div class="field-group" style="margin-top:12px;">
+                    <label style="color:var(--text-muted);font-size:0.85rem;">Store Logo</label>
+                    <div style="display:flex;align-items:center;gap:12px;margin-top:6px;">
+                        <div id="settingsLogoPreview" style="width:64px;height:64px;border-radius:12px;background:var(--bg-card);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;overflow:hidden;flex-shrink:0;">
+                            <svg id="settingsLogoPlaceholder" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--text-muted)" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+                            <img id="settingsLogoImg" class="hidden" style="width:100%;height:100%;object-fit:contain;" alt="Logo">
+                        </div>
+                        <div style="flex:1;">
+                            <input type="file" id="settingsLogoInput" accept="image/*" style="display:none" onchange="handleSettingsLogoSelect(this)">
+                            <button type="button" class="settings-save-btn" style="font-size:0.8rem;padding:8px 16px;" onclick="document.getElementById('settingsLogoInput').click()">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+                                Upload Logo
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="settings-save-btn" id="settingsProfileSaveBtn" style="margin-top:16px;" onclick="saveStoreProfile()">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21H5a2 2 0 01-2-2V5a2 2 0 012-2h11l5 5v11a2 2 0 01-2 2z"/><polyline points="17 21 17 13 7 13 7 21"/><polyline points="7 3 7 8 15 8"/></svg>
+                    Save Store Profile
+                </button>
+            </div>
+
+            <!-- About Section -->
+            <div class="settings-section">
+                <div class="settings-section-title">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                    About Bottela AI
+                </div>
+                <p class="settings-desc">Premium AI-powered promotional content generator for liquor stores. Create stunning posters, discount promotions, and brand story visuals.</p>
+                <div class="settings-version">Version 1.0.0</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Success Toast -->
+<div id="successToast" class="success-toast" style="display:none">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+    <span id="successMsg"></span>
+</div>
+
+<!-- Error Toast -->
+<div id="errorToast" class="error-toast" style="display:none">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+    <span id="errorMsg"></span>
+</div>
+
+<script>
+/* ==============================================================
+   Bottela AI — SPA Router & App Logic
+   ============================================================== */
+
+const FESTIVAL_DATA = {{ festivals | tojson }};
+
+let state = {
+    view: 'landing',   // 'landing' | 'workspace'
+    module: null,       // 'festival' | 'discount' | 'generic'
+    tab: 'create',      // 'create' | 'post' | 'repository'
+    mode: 'single',     // 'single' | 'bulk'
+    outputType: 'photo', // 'photo' | 'video'
+    format: 'post',      // 'post' (1080x1080) | 'story' (1080x1920)
+    selectedFestival: 'diwali',
+    isGenerating: false,
+    genCount: 0,
+};
+
+// ── Navigation ──────────────────────────────────────────────────
+
+function navigateTo(module) {
+    state.view = 'workspace';
+    state.module = module;
+    state.tab = 'create';
+    state.mode = 'single';
+    location.hash = `${module}/create`;
+    render();
+}
+
+function goBack() {
+    state.view = 'landing';
+    state.module = null;
+    location.hash = '';
+    render();
+}
+
+function switchTab(tab) {
+    state.tab = tab;
+    if (state.module) location.hash = `${state.module}/${tab}`;
+    render();
+    if (tab === 'repository') loadGallery();
+    if (tab === 'post') { loadRecentImages(); loadScheduledPosts(); startScheduleChecker(); }
+}
+
+function setMode(mode) {
+    state.mode = mode;
+    document.querySelectorAll('.mode-toggle-btn').forEach((b, i) => {
+        b.classList.toggle('active', (mode === 'single' && i === 0) || (mode === 'bulk' && i === 1));
+    });
+    document.getElementById('singleForm').classList.toggle('hidden', mode === 'bulk');
+    document.getElementById('bulkForm').classList.toggle('hidden', mode === 'single');
+}
+
+window.addEventListener('hashchange', () => {
+    const h = location.hash.replace('#', '');
+    if (!h) { state.view = 'landing'; state.module = null; render(); return; }
+    const [mod, tab] = h.split('/');
+    if (['festival', 'discount', 'generic'].includes(mod)) {
+        state.view = 'workspace';
+        state.module = mod;
+        state.tab = tab || 'create';
+        render();
+    }
+});
+
+// ── Render ──────────────────────────────────────────────────────
+
+function render() {
+    const landing = document.getElementById('landingPage');
+    const workspace = document.getElementById('workspace');
+
+    if (state.view === 'landing') {
+        landing.classList.remove('hidden');
+        workspace.classList.remove('active');
+        return;
+    }
+
+    landing.classList.add('hidden');
+    workspace.classList.add('active');
+
+    // Module name in sidebar
+    const names = { festival: 'Festival AI', discount: 'Discount AI', generic: 'Brand AI' };
+    document.getElementById('sidebarModuleName').textContent = names[state.module] || '';
+
+    // Nav buttons
+    document.querySelectorAll('.ws-nav-btn').forEach(btn => {
+        btn.classList.toggle('active', btn.dataset.tab === state.tab);
+    });
+
+    // Tab panels
+    document.getElementById('tabCreate').classList.toggle('active', state.tab === 'create');
+    document.getElementById('tabPost').classList.toggle('active', state.tab === 'post');
+    document.getElementById('tabRepository').classList.toggle('active', state.tab === 'repository');
+
+    // Module-specific visibility
+    const isFestival = state.module === 'festival';
+    const isGeneric = state.module === 'generic';
+    const isDiscount = state.module === 'discount';
+
+    document.getElementById('festivalSelector').classList.toggle('hidden', !isFestival);
+    document.getElementById('fieldOriginalPrice').classList.toggle('hidden', isGeneric);
+    document.getElementById('fieldDiscountRow').classList.toggle('hidden', isGeneric);
+    document.getElementById('modeToggle').classList.toggle('hidden', !isDiscount);
+
+    // Preview gradient
+    const pg = document.getElementById('previewGradient');
+    pg.className = 'pv-bg ' + (state.module || 'discount');
+
+    updatePreview();
+}
+
+// ── Festival Selection (searchable dropdown) ──────────────────────
+
+function toggleFestivalDropdown() {
+    const dd = document.getElementById('festivalDropdown');
+    const isOpen = dd.style.display !== 'none';
+    dd.style.display = isOpen ? 'none' : 'block';
+    if (!isOpen) {
+        const input = document.getElementById('festivalSearchInput');
+        input.value = '';
+        filterFestivals('');
+        setTimeout(() => input.focus(), 50);
+    }
+}
+
+function filterFestivals(query) {
+    const q = query.toLowerCase().trim();
+    document.querySelectorAll('#festivalList .festival-btn').forEach(btn => {
+        const name = btn.querySelector('.fest-name').textContent.toLowerCase();
+        btn.style.display = name.includes(q) ? 'flex' : 'none';
+    });
+}
+
+function selectFestival(el, key) {
+    state.selectedFestival = key;
+    document.querySelectorAll('.festival-btn').forEach(b => b.classList.remove('active'));
+    el.classList.add('active');
+
+    // Update the dropdown display
+    const emoji = el.querySelector('.fest-emoji')?.textContent || '';
+    const name = el.querySelector('.fest-name')?.textContent || key;
+    const sel = document.getElementById('festivalSelectedText');
+    sel.textContent = emoji + ' ' + name;
+    sel.style.color = 'var(--text-primary)';
+
+    // Close dropdown
+    document.getElementById('festivalDropdown').style.display = 'none';
+
+    updatePreview();
+}
+
+// Close festival dropdown when clicking outside
+document.addEventListener('click', function(e) {
+    const dd = document.getElementById('festivalDropdown');
+    const sel = document.getElementById('festivalSelected');
+    if (dd && sel && !dd.contains(e.target) && !sel.contains(e.target)) {
+        dd.style.display = 'none';
+    }
+});
+
+// ── Live Preview ────────────────────────────────────────────────
+
+function updatePreview() {
+    const name = document.getElementById('productName').value || 'Product Name';
+    const size = document.getElementById('productSize').value;
+    const origPrice = parseFloat(document.getElementById('originalPrice').value);
+    const discPct = parseInt(document.getElementById('discountPct').value);
+    const store = document.getElementById('storeName').value;
+
+    // Product name
+    document.getElementById('previewName').textContent = name;
+
+    // Size
+    const sizeEl = document.getElementById('previewSize');
+    if (size) { sizeEl.textContent = size; sizeEl.style.display = ''; }
+    else { sizeEl.style.display = 'none'; }
+
+    // Background gradient based on module
+    const bg = document.getElementById('previewGradient');
+    bg.className = 'pv-bg ' + (state.module || 'discount');
+
+    // Festival badge
+    const festIcon = document.getElementById('previewFestIcon');
+    if (state.module === 'festival' && FESTIVAL_DATA[state.selectedFestival]) {
+        festIcon.textContent = FESTIVAL_DATA[state.selectedFestival].emoji;
+        festIcon.style.display = '';
+    } else {
+        festIcon.style.display = 'none';
+    }
+
+    // Discount badge
+    const discBadge = document.getElementById('pvDiscBadge');
+    if (state.module !== 'generic' && discPct > 0 && discPct < 100) {
+        document.getElementById('pvDiscNum').textContent = discPct + '%';
+        discBadge.style.display = 'flex';
+    } else {
+        discBadge.style.display = 'none';
+    }
+
+    // Prices
+    const pricesEl = document.getElementById('previewPrices');
+    const origEl = document.getElementById('previewOrigPrice');
+    const discEl = document.getElementById('previewDiscPrice');
+    const calcField = document.getElementById('discountedPrice');
+
+    if (state.module !== 'generic' && origPrice > 0) {
+        origEl.textContent = '$' + origPrice.toFixed(2);
+        if (discPct > 0 && discPct < 100) {
+            const discounted = (origPrice * (1 - discPct / 100)).toFixed(2);
+            discEl.textContent = '$' + discounted;
+            calcField.value = '$' + discounted;
+        } else {
+            discEl.textContent = '';
+            calcField.value = '';
+        }
+        pricesEl.style.display = 'flex';
+    } else {
+        pricesEl.style.display = 'none';
+        calcField.value = '';
+    }
+
+    // Store name in CTA bar + IG header
+    document.getElementById('previewStoreName').textContent = store || '';
+    document.getElementById('pvIgName').textContent = store || 'Store Name';
+    document.getElementById('pvCapName').textContent = (store || 'store').toLowerCase().replace(/\s+/g, '');
+}
+
+// Load store name into hidden field on page load
+async function initStoreProfile() {
+    try {
+        const resp = await fetch('/settings/store-profile');
+        const data = await resp.json();
+        document.getElementById('storeName').value = data.store_name || '';
+        updatePreview();
+    } catch(e) {}
+}
+
+// ── Template Selection ───────────────────────────────────────────
+
+function selectTemplate(btn, themeKey) {
+    document.querySelectorAll('.theme-card').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    document.getElementById('selectedTheme').value = themeKey;
+    const gradients = {
+        flash_sale_gold: 'linear-gradient(135deg, #1a1a2e, #2d2d3f)',
+        flash_sale_yellow: 'linear-gradient(135deg, #3e2723, #5d4037)',
+    };
+    const pg = document.getElementById('previewGradient');
+    if (pg && gradients[themeKey]) {
+        pg.style.background = gradients[themeKey];
+    }
+}
+
+// ── Output Type Toggle ──────────────────────────────────────────
+
+function setOutputType(type) {
+    state.outputType = type;
+    document.getElementById('togglePhoto').classList.toggle('active', type === 'photo');
+    document.getElementById('toggleVideo').classList.toggle('active', type === 'video');
+    const btnText = document.getElementById('btnGenerateText');
+    if (btnText) {
+        btnText.textContent = type === 'video' ? 'Generate Video' : 'Generate Promotion';
+    }
+}
+
+function setFormat(fmt) {
+    state.format = fmt;
+    document.getElementById('fmtPost').classList.toggle('active', fmt === 'post');
+    document.getElementById('fmtStory').classList.toggle('active', fmt === 'story');
+}
+
+// ── Product Image Upload ─────────────────────────────────────────
+
+let productImageFile = null;
+
+function handleProductImageUpload(input) {
+    if (input.files[0]) {
+        productImageFile = input.files[0];
+        const reader = new FileReader();
+        reader.onload = (e) => {
+            document.getElementById('productUploadContent').classList.add('hidden');
+            const preview = document.getElementById('productUploadPreview');
+            preview.classList.remove('hidden');
+            document.getElementById('productPreviewThumb').src = e.target.result;
+            document.getElementById('productImageUrl').value = '';
+            document.getElementById('productSearchResults').classList.add('hidden');
+        };
+        reader.readAsDataURL(input.files[0]);
+    }
+}
+
+function handleProductImageDrop(e) {
+    e.preventDefault();
+    document.getElementById('productUploader').classList.remove('dragging');
+    const file = e.dataTransfer.files[0];
+    if (file && file.type.startsWith('image/')) {
+        document.getElementById('productImageInput').files = e.dataTransfer.files;
+        handleProductImageUpload(document.getElementById('productImageInput'));
+    }
+}
+
+function removeProductImage() {
+    productImageFile = null;
+    document.getElementById('productImageInput').value = '';
+    document.getElementById('productUploadContent').classList.remove('hidden');
+    document.getElementById('productUploadPreview').classList.add('hidden');
+    document.getElementById('productImageUrl').value = '';
+}
+
+function selectSearchImage(url, el) {
+    document.getElementById('productImageUrl').value = url;
+    document.querySelectorAll('#productSearchGrid .post-recent-thumb').forEach(t => t.classList.remove('active'));
+    el.classList.add('active');
+    // Remove uploaded file since user chose a search result
+    productImageFile = null;
+    document.getElementById('productImageInput').value = '';
+    document.getElementById('productUploadContent').classList.remove('hidden');
+    document.getElementById('productUploadPreview').classList.add('hidden');
+}
+
+async function searchProductImage() {
+    const name = document.getElementById('productName').value.trim();
+    if (!name || productImageFile) return;
+
+    try {
+        const resp = await fetch('/search-product-image', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ product_name: name })
+        });
+        const data = await resp.json();
+        const grid = document.getElementById('productSearchGrid');
+        const container = document.getElementById('productSearchResults');
+
+        if (data.images && data.images.length > 0) {
+            grid.innerHTML = data.images.map(url => `
+                <div class="post-recent-thumb" onclick="selectSearchImage('${url.replace(/'/g, "\\'")}', this)">
+                    <img src="${url}" alt="Product" loading="lazy" onerror="this.parentElement.style.display='none'">
+                </div>
+            `).join('');
+            container.classList.remove('hidden');
+        } else {
+            container.classList.add('hidden');
+        }
+    } catch(e) {
+        console.log('Search failed:', e);
+    }
+}
+
+// Auto-search when user finishes typing product name
+let searchTimeout;
+document.addEventListener('DOMContentLoaded', () => {
+    const nameInput = document.getElementById('productName');
+    if (nameInput) {
+        nameInput.addEventListener('input', () => {
+            clearTimeout(searchTimeout);
+            searchTimeout = setTimeout(() => {
+                if (!productImageFile && nameInput.value.trim().length >= 3) {
+                    searchProductImage();
+                }
+            }, 1000);
+        });
+    }
+});
+
+// ── Store Profile ────────────────────────────────────────────────
+
+function handleSettingsLogoSelect(input) {
+    if (input.files[0]) {
+        const reader = new FileReader();
+        reader.onload = (e) => {
+            document.getElementById('settingsLogoPlaceholder').classList.add('hidden');
+            const img = document.getElementById('settingsLogoImg');
+            img.src = e.target.result;
+            img.classList.remove('hidden');
+        };
+        reader.readAsDataURL(input.files[0]);
+    }
+}
+
+async function loadStoreProfile() {
+    try {
+        const resp = await fetch('/settings/store-profile');
+        const data = await resp.json();
+        document.getElementById('settingsStoreName').value = data.store_name || '';
+        document.getElementById('storeName').value = data.store_name || '';
+        if (data.has_logo) {
+            document.getElementById('settingsLogoPlaceholder').classList.add('hidden');
+            const img = document.getElementById('settingsLogoImg');
+            img.src = '/settings/store-logo?' + Date.now();
+            img.classList.remove('hidden');
+        }
+    } catch(e) {
+        console.log('Failed to load store profile:', e);
+    }
+}
+
+async function saveStoreProfile() {
+    const btn = document.getElementById('settingsProfileSaveBtn');
+    btn.disabled = true;
+    btn.innerHTML = '<span class="spinner" style="display:inline-block;width:14px;height:14px;border:2px solid rgba(255,255,255,0.3);border-top-color:#fff;border-radius:50%;animation:spin 0.6s linear infinite;vertical-align:middle;margin-right:6px"></span>Saving...';
+
+    const formData = new FormData();
+    formData.append('store_name', document.getElementById('settingsStoreName').value);
+    const logoFile = document.getElementById('settingsLogoInput').files[0];
+    if (logoFile) formData.append('logo', logoFile);
+
+    try {
+        const resp = await fetch('/settings/store-profile', { method: 'POST', body: formData });
+        const data = await resp.json();
+        if (data.status === 'success') {
+            showSuccess('Store profile saved!');
+            document.getElementById('storeName').value = data.store_name;
+        } else {
+            showError(data.error || 'Failed to save profile');
+        }
+    } catch(e) {
+        showError('Network error: ' + e.message);
+    } finally {
+        btn.disabled = false;
+        btn.innerHTML = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21H5a2 2 0 01-2-2V5a2 2 0 012-2h11l5 5v11a2 2 0 01-2 2z"/><polyline points="17 21 17 13 7 13 7 21"/><polyline points="7 3 7 8 15 8"/></svg>Save Store Profile';
+    }
+}
+
+// ── Generation ──────────────────────────────────────────────────
+
+function showGenAnimation() {
+    const scene = document.getElementById('genScene');
+    scene.classList.remove('fade-out');
+    scene.style.display = 'flex';
+    // Create particles
+    const container = document.getElementById('genParticles');
+    container.innerHTML = '';
+    for (let i = 0; i < 12; i++) {
+        const p = document.createElement('div');
+        p.className = 'gen-particle';
+        p.style.left = (Math.random() * 100) + '%';
+        p.style.animationDelay = (Math.random() * 3) + 's';
+        p.style.animationDuration = (4 + Math.random() * 4) + 's';
+        container.appendChild(p);
+    }
+}
+
+function updateGenProgress(step, pct) {
+    const labels = ['Analyzing Design...', 'Creating Layout...', 'Rendering Visuals...', 'Finalizing Output...'];
+    document.getElementById('genStepLabel').textContent = labels[step] || 'Processing...';
+    document.getElementById('genPct').textContent = Math.round(pct) + '%';
+    document.getElementById('genBar').style.width = pct + '%';
+}
+
+function hideGenAnimation() {
+    const scene = document.getElementById('genScene');
+    scene.classList.add('fade-out');
+    setTimeout(() => {
+        scene.style.display = 'none';
+        scene.classList.remove('fade-out');
+    }, 600);
+}
+
+// ── Naughty Robot Cleaning Reveal Animation ──
+function startRevealAnimation(imgPath, productName) {
+    return new Promise((resolve) => {
+        const img = document.getElementById('previewGenImg');
+        const robot = document.getElementById('roboCleaner');
+        const sweeper = document.getElementById('revealSweeper');
+        const pvPost = document.querySelector('.pv-post');
+        const mockup = document.getElementById('previewMockup');
+
+        // Prepare: set image src, clear old classes
+        img.classList.remove('reveal-active', 'reveal-sharp');
+        robot.classList.remove('active', 'moving', 'flipped', 'celebrate');
+        robot.style.cssText = '';
+        sweeper.classList.remove('active');
+        sweeper.style.height = '0';
+        img.src = '/output/' + imgPath;
+        document.getElementById('previewGenTitle').textContent = productName || 'Premium Promotion';
+        document.getElementById('previewDownloadBtn').href = '/output/' + imgPath;
+
+        img.onload = () => {
+            if (pvPost) pvPost.style.display = 'none';
+            hideGenAnimation();
+
+            // Show image (clipped to 0%) and robot
+            requestAnimationFrame(() => {
+                img.classList.add('reveal-active');
+                robot.classList.add('active', 'moving');
+                sweeper.classList.add('active');
+            });
+
+            // Get container dimensions
+            const rect = mockup.getBoundingClientRect();
+            const W = rect.width;
+            const H = rect.height;
+
+            // Robot zigzag path: 5 rows, alternating left→right and right→left
+            const rows = 5;
+            const rowH = H / rows;
+            const rowDuration = 700; // ms per row
+            const pauseDuration = 150; // pause between rows
+            let currentRow = 0;
+
+            function animateRow() {
+                if (currentRow >= rows) {
+                    // Cleaning done!
+                    finishReveal();
+                    return;
+                }
+
+                const goingRight = currentRow % 2 === 0;
+                const startX = goingRight ? -10 : W - 44;
+                const endX = goingRight ? W - 44 : -10;
+                const topY = currentRow * rowH;
+
+                // Flip robot based on direction
+                robot.classList.toggle('flipped', !goingRight);
+
+                // Position robot at start
+                robot.style.left = startX + 'px';
+                robot.style.top = topY + 'px';
+                robot.style.transition = 'none';
+                void robot.offsetWidth; // force reflow
+
+                // Animate robot across the row
+                robot.style.transition = `left ${rowDuration}ms cubic-bezier(0.22, 0.61, 0.36, 1), top 100ms ease`;
+                robot.style.left = endX + 'px';
+
+                // Update image clip-path as robot moves (reveal from top)
+                const revealPct = ((currentRow + 1) / rows) * 100;
+                const clipBottom = 100 - revealPct;
+                img.style.clipPath = `inset(0 0 ${clipBottom}% 0)`;
+
+                // Also reduce blur progressively
+                const blurAmount = Math.max(0, 12 - (revealPct / 100) * 12);
+                const brightness = 0.7 + (revealPct / 100) * 0.3;
+                img.style.filter = `blur(${blurAmount}px) brightness(${brightness})`;
+
+                // Update sweeper glow height
+                sweeper.style.height = revealPct + '%';
+
+                currentRow++;
+                setTimeout(() => {
+                    // Small pause — robot looks around naughtily
+                    robot.classList.remove('moving');
+                    setTimeout(() => {
+                        robot.classList.add('moving');
+                        animateRow();
+                    }, pauseDuration);
+                }, rowDuration);
+            }
+
+            function finishReveal() {
+                // Robot celebrates!
+                robot.classList.remove('moving', 'flipped');
+                robot.classList.add('celebrate');
+
+                // Sharpen image to full clarity
+                img.classList.remove('reveal-active');
+                void img.offsetWidth;
+                img.classList.add('reveal-sharp');
+                img.style.clipPath = '';
+                img.style.filter = '';
+                img.style.display = 'block';
+                sweeper.classList.remove('active');
+                sweeper.style.height = '0';
+
+                // After celebration, hide robot and show info
+                setTimeout(() => {
+                    robot.classList.remove('active', 'celebrate');
+                    robot.style.cssText = '';
+                    document.getElementById('previewGenOverlay').style.display = 'block';
+                    document.getElementById('previewGenInfo').style.display = 'block';
+                    resolve();
+                }, 1800);
+            }
+
+            // Start the zigzag after a short beat
+            setTimeout(animateRow, 300);
+        };
+
+        img.onerror = () => {
+            showGeneratedImageDirect(imgPath, productName);
+            resolve();
+        };
+    });
+}
+
+// Direct show (no animation) — used as fallback and for videos
+function showGeneratedImageDirect(imgPath, productName) {
+    const img = document.getElementById('previewGenImg');
+    const overlay = document.getElementById('previewGenOverlay');
+    const info = document.getElementById('previewGenInfo');
+
+    img.classList.remove('reveal-active', 'reveal-sharp');
+    img.src = '/output/' + imgPath;
+    img.style.display = 'block';
+    overlay.style.display = 'block';
+    info.style.display = 'block';
+    document.getElementById('previewGenTitle').textContent = productName || 'Premium Promotion';
+    document.getElementById('previewDownloadBtn').href = '/output/' + imgPath;
+
+    const pvPost = document.querySelector('.pv-post');
+    if (pvPost) pvPost.style.display = 'none';
+}
+
+function showGeneratedVideo(videoPath, productName) {
+    const video = document.getElementById('previewGenVideo');
+    const overlay = document.getElementById('previewGenOverlay');
+    const info = document.getElementById('previewGenInfo');
+
+    video.src = '/output/' + videoPath;
+    video.style.display = 'block';
+    document.getElementById('previewGenImg').style.display = 'none';
+    overlay.style.display = 'block';
+    info.style.display = 'block';
+    document.getElementById('previewGenTitle').textContent = productName || 'Premium Promotion';
+    document.getElementById('previewDownloadBtn').href = '/output/' + videoPath;
+
+    const pvPost = document.querySelector('.pv-post');
+    if (pvPost) pvPost.style.display = 'none';
+}
+
+function resetPreviewToLive() {
+    const img = document.getElementById('previewGenImg');
+    img.style.display = 'none';
+    img.style.clipPath = '';
+    img.style.filter = '';
+    img.classList.remove('reveal-active', 'reveal-sharp');
+    const robot = document.getElementById('roboCleaner');
+    robot.classList.remove('active', 'moving', 'flipped', 'celebrate');
+    robot.style.cssText = '';
+    const sweeper = document.getElementById('revealSweeper');
+    sweeper.classList.remove('active');
+    sweeper.style.height = '0';
+    document.getElementById('previewGenVideo').style.display = 'none';
+    document.getElementById('previewGenOverlay').style.display = 'none';
+    document.getElementById('previewGenInfo').style.display = 'none';
+    const pvPost = document.querySelector('.pv-post');
+    if (pvPost) pvPost.style.display = 'flex';
+    updatePreview();
+}
+
+async function handleGenerate() {
+    if (state.isGenerating) return;
+
+    const productName = document.getElementById('productName').value.trim();
+    if (!productName) { showError('Product name is required'); return; }
+
+    const btn = document.getElementById('btnGenerate');
+    const btnText = document.getElementById('btnGenerateText');
+    const btnOrigHTML = btnText.innerHTML;
+
+    // Validate before starting animation
+    const formData = new FormData();
+    formData.append('product_name', productName);
+    formData.append('product_image_url', document.getElementById('productImageUrl').value);
+    formData.append('format', state.format);
+
+    // Attach uploaded product image if available
+    if (productImageFile) {
+        formData.append('product_image', productImageFile);
+    }
+
+    const isVideo = state.outputType === 'video';
+    let url;
+
+    const selectedTheme = document.getElementById('selectedTheme').value;
+    formData.append('theme', selectedTheme);
+
+    if (isVideo) {
+        url = '/generate-video';
+        formData.append('module', state.module || 'discount');
+        if (state.module === 'festival') {
+            formData.append('event', state.selectedFestival);
+        }
+        if (state.module !== 'generic') {
+            const origPrice = parseFloat(document.getElementById('originalPrice').value);
+            const discPct = parseInt(document.getElementById('discountPct').value);
+            if (origPrice > 0) formData.append('original_price', origPrice);
+            if (discPct > 0) formData.append('discount_pct', discPct);
+        }
+    } else if (state.module === 'generic') {
+        url = '/generate-generic';
+        formData.append('product_size', document.getElementById('productSize').value);
+    } else if (state.module === 'festival') {
+        url = '/generate-single';
+        const origPrice = parseFloat(document.getElementById('originalPrice').value);
+        const discPct = parseInt(document.getElementById('discountPct').value);
+        if (!origPrice || origPrice <= 0) { showError('Original price is required'); return; }
+        if (!discPct || discPct < 1 || discPct > 99) { showError('Discount must be 1-99%'); return; }
+        formData.append('original_price', origPrice);
+        formData.append('discount_pct', discPct);
+        formData.append('event', state.selectedFestival);
+    } else {
+        url = '/generate-single';
+        const origPrice = parseFloat(document.getElementById('originalPrice').value);
+        const discPct = parseInt(document.getElementById('discountPct').value);
+        if (!origPrice || origPrice <= 0) { showError('Original price is required'); return; }
+        if (!discPct || discPct < 1 || discPct > 99) { showError('Discount must be 1-99%'); return; }
+        formData.append('original_price', origPrice);
+        formData.append('discount_pct', discPct);
+    }
+
+    // Start generation
+    state.isGenerating = true;
+    btn.disabled = true;
+    const genLabel = isVideo ? 'AI is Creating Video...' : 'AI is Creating...';
+    btnText.innerHTML = '<span class="spinner" style="display:inline-block;width:20px;height:20px;border:2px solid rgba(255,255,255,0.3);border-top-color:#fff;border-radius:50%;animation:spin 0.6s linear infinite;vertical-align:middle;margin-right:8px"></span>' + genLabel;
+
+    resetPreviewToLive();
+    showGenAnimation();
+
+    let fakeProgress = 0;
+    const progressRate = isVideo ? 0.15 : 0.5; // Video takes longer
+    const progressInterval = setInterval(() => {
+        fakeProgress = Math.min(fakeProgress + progressRate, 90);
+        const step = fakeProgress < 25 ? 0 : fakeProgress < 50 ? 1 : fakeProgress < 75 ? 2 : 3;
+        updateGenProgress(step, fakeProgress);
+    }, 300);
+
+    try {
+        const resp = await fetch(url, { method: 'POST', body: formData });
+        const data = await resp.json();
+
+        clearInterval(progressInterval);
+        updateGenProgress(3, 100);
+        await new Promise(r => setTimeout(r, 400));
+
+        if (resp.status === 429) {
+            hideGenAnimation();
+            showError(data.error || 'Weekly generation limit reached.');
+            resetPreviewToLive();
+        } else if (resp.status === 401) {
+            window.location.href = '/';
+        } else if (isVideo && data.status === 'success' && data.video_path) {
+            hideGenAnimation();
+            showGeneratedVideo(data.video_path, productName);
+            state.genCount++;
+            updateUsage();
+        } else if (!isVideo && data.status === 'success' && data.image_path) {
+            // Cinematic reveal animation
+            await startRevealAnimation(data.image_path, productName);
+            state.genCount++;
+            updateUsage();
+        } else {
+            hideGenAnimation();
+            showError(data.error || 'Generation failed');
+            resetPreviewToLive();
+        }
+    } catch (err) {
+        clearInterval(progressInterval);
+        hideGenAnimation();
+        resetPreviewToLive();
+        showError('Network error: ' + err.message);
+    } finally {
+        state.isGenerating = false;
+        btn.disabled = false;
+        btnText.innerHTML = btnOrigHTML;
+    }
+}
+
+// ── Bulk ─────────────────────────────────────────────────────────
+
+let bulkRows = [];
+let bulkLogoPath = '';
+
+function handleBulkSelect(input) {
+    if (input.files[0]) showBulkFile(input.files[0]);
+}
+
+function handleBulkDrop(e) {
+    e.preventDefault();
+    document.getElementById('bulkUploadZone').classList.remove('drag-over');
+    if (e.dataTransfer.files[0]) {
+        document.getElementById('bulkFileInput').files = e.dataTransfer.files;
+        showBulkFile(e.dataTransfer.files[0]);
+    }
+}
+
+function showBulkFile(file) {
+    document.getElementById('bulkFileInfo').innerHTML = `
+        <div class="file-info-inner">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+            ${file.name}
+            <button class="file-remove" onclick="removeBulkFile()">&times;</button>
+        </div>`;
+    document.getElementById('bulkFileInfo').classList.remove('hidden');
+}
+
+function removeBulkFile() {
+    document.getElementById('bulkFileInput').value = '';
+    document.getElementById('bulkFileInfo').classList.add('hidden');
+    document.getElementById('bulkFileInfo').innerHTML = '';
+}
+
+async function handleBulkGenerate() {
+    const fileInput = document.getElementById('bulkFileInput');
+    if (!fileInput.files[0]) { showError('Please upload a CSV or Excel file'); return; }
+
+    const formData = new FormData();
+    formData.append('file', fileInput.files[0]);
+
+    try {
+        const resp = await fetch('/upload', { method: 'POST', body: formData });
+        const data = await resp.json();
+        if (data.error) { showError(data.error); return; }
+
+        bulkRows = data.rows;
+        bulkLogoPath = data.logo_path || '';
+        const storeName = data.store_name || '';
+
+        document.getElementById('bulkProgress').classList.remove('hidden');
+        document.getElementById('bulkResults').innerHTML = '';
+
+        for (let i = 0; i < bulkRows.length; i++) {
+            const pct = Math.round(((i + 1) / bulkRows.length) * 100);
+            document.getElementById('bulkPct').textContent = pct + '%';
+            document.getElementById('bulkBar').style.width = pct + '%';
+            document.getElementById('bulkStatus').textContent = `Generating ${i + 1} of ${bulkRows.length}: ${bulkRows[i].product_name}`;
+
+            try {
+                const resp = await fetch('/generate-bulk-item', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ ...bulkRows[i], logo_path: bulkLogoPath, store_name: storeName })
+                });
+                const result = await resp.json();
+                if (result.status === 'success') {
+                    document.getElementById('bulkResults').innerHTML += `
+                        <div class="result-card">
+                            <div class="result-img-wrap"><img src="/output/${result.image_path}" alt="${result.product_name}"></div>
+                            <div class="result-meta"><h4>${result.product_name}</h4></div>
+                        </div>`;
+                    state.genCount++;
+                }
+            } catch (e) { /* skip failed items */ }
+        }
+
+        document.getElementById('bulkStatus').textContent = 'Complete!';
+        updateUsage();
+    } catch (err) {
+        showError('Upload failed: ' + err.message);
+    }
+}
+
+// ── Gallery / Repository ────────────────────────────────────────
+
+function ensureLightbox() {
+    if (document.getElementById('lightboxModal')) return;
+    const style = document.createElement('style');
+    style.textContent = `
+        .lightbox-modal { position:fixed; inset:0; background:rgba(0,0,0,0.92); display:none; align-items:center; justify-content:center; z-index:9999; padding:24px; cursor:zoom-out; }
+        .lightbox-modal.open { display:flex; animation:lbFade .15s ease; }
+        @keyframes lbFade { from { opacity:0 } to { opacity:1 } }
+        .lightbox-content { max-width:90vw; max-height:90vh; cursor:default; box-shadow:0 20px 80px rgba(0,0,0,0.6); border-radius:6px; }
+        .lightbox-content img, .lightbox-content video { max-width:90vw; max-height:90vh; display:block; border-radius:6px; }
+        .lightbox-close { position:absolute; top:18px; right:24px; background:rgba(255,255,255,0.1); border:1px solid rgba(255,255,255,0.2); color:#fff; width:40px; height:40px; border-radius:50%; cursor:pointer; font-size:22px; line-height:1; display:flex; align-items:center; justify-content:center; }
+        .lightbox-close:hover { background:rgba(255,255,255,0.2); }
+        .lightbox-download { position:absolute; top:18px; right:74px; background:rgba(255,255,255,0.1); border:1px solid rgba(255,255,255,0.2); color:#fff; width:40px; height:40px; border-radius:50%; display:flex; align-items:center; justify-content:center; text-decoration:none; }
+        .lightbox-download:hover { background:rgba(255,255,255,0.2); }
+    `;
+    document.head.appendChild(style);
+    const modal = document.createElement('div');
+    modal.id = 'lightboxModal';
+    modal.className = 'lightbox-modal';
+    modal.innerHTML = `
+        <button class="lightbox-close" aria-label="Close">×</button>
+        <a class="lightbox-download" id="lightboxDownload" download aria-label="Download">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        </a>
+        <div class="lightbox-content" id="lightboxContent" onclick="event.stopPropagation()"></div>
+    `;
+    modal.addEventListener('click', (e) => { if (e.target === modal) closeLightbox(); });
+    modal.querySelector('.lightbox-close').addEventListener('click', closeLightbox);
+    document.body.appendChild(modal);
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeLightbox(); });
+}
+
+function openLightbox(src, isVideo) {
+    ensureLightbox();
+    const content = document.getElementById('lightboxContent');
+    content.innerHTML = isVideo
+        ? `<video src="${src}" controls autoplay loop></video>`
+        : `<img src="${src}" alt="">`;
+    document.getElementById('lightboxDownload').href = src;
+    document.getElementById('lightboxModal').classList.add('open');
+}
+
+function closeLightbox() {
+    const modal = document.getElementById('lightboxModal');
+    if (modal) {
+        modal.classList.remove('open');
+        document.getElementById('lightboxContent').innerHTML = '';
+    }
+}
+
+async function loadGallery() {
+    try {
+        const resp = await fetch('/gallery');
+        const data = await resp.json();
+        let images = data.images || [];
+
+        const filter = document.getElementById('repoFilter').value;
+        if (filter !== 'all') images = images.filter(i => i.type === filter);
+
+        const sort = document.getElementById('repoSort').value;
+        if (sort === 'oldest') images.sort((a, b) => a.created - b.created);
+        else if (sort === 'az') images.sort((a, b) => a.filename.localeCompare(b.filename));
+        else images.sort((a, b) => b.created - a.created);
+
+        const container = document.getElementById('repoContent');
+
+        if (images.length === 0) {
+            container.innerHTML = `
+                <div class="repo-empty">
+                    <div class="repo-empty-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg>
+                    </div>
+                    <h3>No promotions yet</h3>
+                    <p>Start creating to build your gallery</p>
+                    <button class="btn-create-first" onclick="switchTab('create')">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                        Create First Promotion
+                    </button>
+                </div>`;
+            return;
+        }
+
+        container.innerHTML = '<div class="repo-grid">' + images.map((img, idx) => {
+            const date = new Date(img.created * 1000).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+            const name = img.filename.replace(/_/g, ' ').replace(/\.(png|jpg|jpeg|mp4)$/i, '').replace(/ (discount promo|generic promo)$/i, '');
+            const isVideo = img.media === 'video' || img.filename.toLowerCase().endsWith('.mp4');
+            const mediaEl = isVideo
+                ? `<video src="/output/${img.filename}" muted loop onmouseenter="this.play()" onmouseleave="this.pause();this.currentTime=0" style="width:100%;height:100%;object-fit:cover"></video>`
+                : `<img src="/output/${img.filename}" alt="${name}" loading="lazy">`;
+            const mediaLabel = isVideo ? 'video' : 'poster';
+            const mediaIcon = isVideo
+                ? '<svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg>'
+                : '<svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/></svg>';
+            return `
+                <div class="repo-card" style="animation: fadeSlideUp 0.3s ease ${idx * 0.05}s both">
+                    <div class="repo-card-img" style="cursor:zoom-in" onclick="openLightbox('/output/${img.filename}', ${isVideo})">
+                        ${mediaEl}
+                        <div class="repo-card-overlay">
+                            <div class="repo-card-actions">
+                                <a class="repo-action-btn" href="/output/${img.filename}" download onclick="event.stopPropagation()">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="repo-card-badge left">
+                            ${mediaIcon}
+                            ${mediaLabel}
+                        </div>
+                        <div class="repo-card-badge right">${img.type}</div>
+                    </div>
+                    <div class="repo-card-meta">
+                        <h4>${name}</h4>
+                        <p>${date}</p>
+                    </div>
+                </div>`;
+        }).join('') + '</div>';
+    } catch (err) {
+        document.getElementById('repoContent').innerHTML = '<p style="color:var(--text-muted);text-align:center;padding:40px">Failed to load gallery</p>';
+    }
+}
+
+// ── Usage ───────────────────────────────────────────────────────
+
+async function updateUsage() {
+    try {
+        const res = await fetch('/api/usage');
+        if (res.ok) {
+            const data = await res.json();
+            const max = data.weekly_limit || 3;
+            const used = data.used || 0;
+            const remaining = data.remaining || (max - used);
+            state.genCount = used;
+            document.getElementById('usageCount').textContent = `${used} / ${max}`;
+            document.getElementById('usageBar').style.width = ((used / max) * 100) + '%';
+            document.getElementById('usageHint').textContent = `${remaining} generations remaining this week`;
+
+            // Change bar color based on usage
+            const bar = document.getElementById('usageBar');
+            const pct = (used / max) * 100;
+            if (pct > 90) bar.style.background = 'var(--danger)';
+            else if (pct > 70) bar.style.background = 'var(--warning)';
+            else bar.style.background = '';
+
+        }
+    } catch (e) {
+        // Fallback to local count
+        const max = 50;
+        const used = state.genCount;
+        document.getElementById('usageCount').textContent = `${used} / ${max}`;
+        document.getElementById('usageBar').style.width = ((used / max) * 100) + '%';
+        document.getElementById('usageHint').textContent = `${max - used} generations remaining`;
+    }
+}
+
+// ── Post Tab Logic ──────────────────────────────────────────────
+
+let postState = {
+    selectedImage: null,       // URL of selected image (data URL or /output/filename)
+    selectedImageFile: null,   // File object for uploaded images
+    selectedPlatform: null,
+    selectedImageFilename: '', // filename from gallery
+};
+
+function handlePostImageSelect(input) {
+    if (input.files[0]) {
+        postState.selectedImageFile = input.files[0];
+        const reader = new FileReader();
+        reader.onload = (e) => {
+            postState.selectedImage = e.target.result;
+            showPostImagePreview(e.target.result);
+            updatePhonePreview();
+            generateCaption();
+        };
+        reader.readAsDataURL(input.files[0]);
+    }
+}
+
+function handlePostImageDrop(e) {
+    e.preventDefault();
+    document.getElementById('postUploadZone').classList.remove('dragging');
+    const file = e.dataTransfer.files[0];
+    if (file && file.type.startsWith('image/')) {
+        document.getElementById('postImageInput').files = e.dataTransfer.files;
+        handlePostImageSelect(document.getElementById('postImageInput'));
+    }
+}
+
+function showPostImagePreview(src) {
+    document.getElementById('postUploadPlaceholder').classList.add('hidden');
+    const preview = document.getElementById('postUploadPreview');
+    preview.classList.remove('hidden');
+    document.getElementById('postPreviewImg').src = src;
+}
+
+function removePostImage() {
+    postState.selectedImage = null;
+    postState.selectedImageFile = null;
+    postState.selectedImageFilename = '';
+    document.getElementById('postImageInput').value = '';
+    document.getElementById('postUploadPlaceholder').classList.remove('hidden');
+    document.getElementById('postUploadPreview').classList.add('hidden');
+    document.getElementById('phonePreviewImage').classList.add('hidden');
+    document.getElementById('phoneImagePlaceholder').style.display = '';
+    document.getElementById('captionBox').textContent = 'Upload an image to generate a caption...';
+    // Deselect recent thumbs
+    document.querySelectorAll('.post-recent-thumb').forEach(t => t.classList.remove('active'));
+}
+
+function selectRecentImage(el, filename) {
+    const src = '/output/' + filename;
+    postState.selectedImage = src;
+    postState.selectedImageFile = null;
+    postState.selectedImageFilename = filename;
+    showPostImagePreview(src);
+    updatePhonePreview();
+    generateCaption();
+    // Highlight selected thumb
+    document.querySelectorAll('.post-recent-thumb').forEach(t => t.classList.remove('active'));
+    el.classList.add('active');
+}
+
+async function loadRecentImages() {
+    try {
+        const resp = await fetch('/gallery');
+        const data = await resp.json();
+        const images = (data.images || []).slice(0, 6);
+        const grid = document.getElementById('postRecentGrid');
+        if (images.length === 0) {
+            grid.innerHTML = '<p style="color:var(--text-muted);font-size:0.8rem;">No generated images yet</p>';
+            return;
+        }
+        grid.innerHTML = images.map(img => `
+            <div class="post-recent-thumb" onclick="selectRecentImage(this, '${img.filename}')">
+                <img src="/output/${img.filename}" alt="${img.filename}" loading="lazy">
+            </div>
+        `).join('');
+    } catch(e) {
+        document.getElementById('postRecentGrid').innerHTML = '';
+    }
+}
+
+function selectPlatform(btn, platform) {
+    postState.selectedPlatform = platform;
+    document.querySelectorAll('.platform-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    updatePhonePreview();
+}
+
+function updatePhonePreview() {
+    const phoneImg = document.getElementById('phonePreviewImage');
+    const placeholder = document.getElementById('phoneImagePlaceholder');
+    const captionEl = document.getElementById('phoneCaptionText');
+
+    if (postState.selectedImage) {
+        phoneImg.src = postState.selectedImage;
+        phoneImg.classList.remove('hidden');
+        placeholder.style.display = 'none';
+    } else {
+        phoneImg.classList.add('hidden');
+        placeholder.style.display = '';
+    }
+
+    // Update caption in phone
+    const caption = document.getElementById('captionBox').textContent;
+    if (caption && caption !== 'Upload an image to generate a caption...') {
+        captionEl.textContent = caption.substring(0, 80) + (caption.length > 80 ? '...' : '');
+    } else {
+        captionEl.textContent = '';
+    }
+}
+
+const CAPTION_TEMPLATES = [
+    "Elevate your evening with {product}. Crafted for those who appreciate the finer things. {tags}",
+    "Discover {product} — a premium selection for unforgettable moments. {tags}",
+    "Looking for something special? {product} is your perfect choice this season. {tags}",
+    "Treat yourself to {product}. Because you deserve nothing but the best. {tags}",
+    "Weekend plans sorted! Grab {product} and make every moment count. {tags}",
+    "Introducing {product} to our exclusive collection. Don't miss out! {tags}",
+    "The perfect pour awaits. {product} — smooth, refined, extraordinary. {tags}",
+    "Step up your game with {product}. Available now at our store. {tags}",
+];
+
+function generateCaption() {
+    const productName = document.getElementById('productName').value.trim() || 'our premium selection';
+    const storeName = document.getElementById('storeName').value.trim();
+    const tags = '#PremiumSpirits #LiquorStore #Cheers';
+
+    const template = CAPTION_TEMPLATES[Math.floor(Math.random() * CAPTION_TEMPLATES.length)];
+    let caption = template.replace('{product}', productName).replace('{tags}', tags);
+    if (storeName) caption += ` @${storeName.replace(/\s+/g, '')}`;
+
+    document.getElementById('captionBox').textContent = caption;
+    updatePhonePreview();
+}
+
+function regenerateCaption() {
+    generateCaption();
+}
+
+function appendTag(btn) {
+    const captionBox = document.getElementById('captionBox');
+    const text = captionBox.textContent;
+    if (text === 'Upload an image to generate a caption...') {
+        captionBox.textContent = btn.textContent;
+    } else {
+        captionBox.textContent = text + ' ' + btn.textContent;
+    }
+    updatePhonePreview();
+}
+
+function copyCaption() {
+    const text = document.getElementById('captionBox').textContent;
+    navigator.clipboard.writeText(text).then(() => {
+        showSuccess('Caption copied to clipboard!');
+    }).catch(() => {
+        // Fallback
+        const ta = document.createElement('textarea');
+        ta.value = text;
+        document.body.appendChild(ta);
+        ta.select();
+        document.execCommand('copy');
+        document.body.removeChild(ta);
+        showSuccess('Caption copied to clipboard!');
+    });
+}
+
+function handlePublish() {
+    if (!postState.selectedImage) {
+        showError('Please select an image first');
+        return;
+    }
+    if (!postState.selectedPlatform) {
+        showError('Please select a platform');
+        return;
+    }
+    showSuccess('Social media publishing is coming soon! Your caption has been generated and can be copied.');
+}
+
+// ── Scheduled Posts ─────────────────────────────────────────────
+
+function schedulePost() {
+    if (!postState.selectedImage) {
+        showError('Please select an image first');
+        return;
+    }
+    if (!postState.selectedPlatform) {
+        showError('Please select a platform');
+        return;
+    }
+    const schedDate = document.getElementById('scheduleDate').value;
+    const schedTime = document.getElementById('scheduleTime').value;
+    if (!schedDate || !schedTime) {
+        showError('Please set a date and time for scheduling');
+        return;
+    }
+
+    const caption = document.getElementById('captionBox').innerText || '';
+    const imageFilename = postState.selectedImageFilename || postState.selectedImage;
+    const scheduledAt = schedDate + 'T' + schedTime + ':00';
+
+    fetch('/schedule-post', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+            image: imageFilename,
+            platform: postState.selectedPlatform,
+            caption: caption,
+            scheduled_at: scheduledAt,
+        }),
+    })
+    .then(r => r.json())
+    .then(data => {
+        if (data.error) {
+            showError(data.error);
+        } else {
+            showSuccess(`Post scheduled for ${schedDate} at ${schedTime}`);
+            document.getElementById('scheduleDate').value = '';
+            document.getElementById('scheduleTime').value = '';
+            loadScheduledPosts();
+        }
+    })
+    .catch(err => showError('Failed to schedule post'));
+}
+
+function handlePostNow() {
+    if (!postState.selectedImage) {
+        showError('Please select an image first');
+        return;
+    }
+    if (!postState.selectedPlatform) {
+        showError('Please select a platform');
+        return;
+    }
+
+    const caption = document.getElementById('captionBox').innerText || '';
+    const imageFilename = postState.selectedImageFilename || postState.selectedImage;
+    const now = new Date().toISOString().slice(0, 19);
+
+    fetch('/schedule-post', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+            image: imageFilename,
+            platform: postState.selectedPlatform,
+            caption: caption,
+            scheduled_at: now,
+        }),
+    })
+    .then(r => r.json())
+    .then(data => {
+        if (data.error) {
+            showError(data.error);
+            return;
+        }
+        // Immediately mark as posted
+        return fetch(`/scheduled-posts/${data.post.id}/post-now`, { method: 'POST' });
+    })
+    .then(r => r ? r.json() : null)
+    .then(() => {
+        showSuccess(`Posted to ${postState.selectedPlatform} successfully! (Demo)`);
+        loadScheduledPosts();
+    })
+    .catch(err => showError('Failed to post'));
+}
+
+function loadScheduledPosts() {
+    fetch('/scheduled-posts')
+        .then(r => r.json())
+        .then(data => {
+            renderScheduledPosts(data.posts || []);
+        })
+        .catch(() => {});
+}
+
+function renderScheduledPosts(posts) {
+    const container = document.getElementById('scheduledPostsList');
+    const countEl = document.getElementById('scheduledCount');
+    const pendingCount = posts.filter(p => p.status === 'pending').length;
+    countEl.textContent = `${posts.length} post${posts.length !== 1 ? 's' : ''}${pendingCount > 0 ? ` (${pendingCount} pending)` : ''}`;
+
+    if (posts.length === 0) {
+        container.innerHTML = `
+            <div class="scheduled-empty">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                <p>No scheduled posts yet</p>
+                <span>Select an image, platform, and time to schedule</span>
+            </div>`;
+        return;
+    }
+
+    const platformIcons = {
+        instagram: '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/></svg>',
+        linkedin: '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>',
+        tiktok: '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/></svg>',
+    };
+
+    const statusClasses = { pending: 'status-pending', posted: 'status-posted', failed: 'status-failed' };
+    const statusLabels = { pending: 'Pending', posted: 'Posted', failed: 'Failed' };
+
+    container.innerHTML = posts.map(post => {
+        const dt = new Date(post.scheduled_at);
+        const dateStr = dt.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+        const timeStr = dt.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit' });
+        const captionPreview = (post.caption || '').slice(0, 60) + ((post.caption || '').length > 60 ? '...' : '');
+        const imgSrc = post.image.startsWith('data:') ? post.image : `/output/${post.image}`;
+
+        return `
+        <div class="scheduled-post-card">
+            <div class="spc-thumb">
+                <img src="${imgSrc}" alt="Post" onerror="this.style.display='none'">
+            </div>
+            <div class="spc-info">
+                <div class="spc-top-row">
+                    <span class="spc-platform">${platformIcons[post.platform] || ''} ${post.platform}</span>
+                    <span class="spc-status ${statusClasses[post.status] || ''}">${statusLabels[post.status] || post.status}</span>
+                </div>
+                <div class="spc-caption">${captionPreview || 'No caption'}</div>
+                <div class="spc-time">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                    ${dateStr} at ${timeStr}
+                </div>
+            </div>
+            <div class="spc-actions">
+                ${post.status === 'pending' ? `<button class="spc-btn spc-post-btn" onclick="simulatePostNow('${post.id}')" title="Post Now">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                </button>` : ''}
+                <button class="spc-btn spc-delete-btn" onclick="deleteScheduledPost('${post.id}')" title="Delete">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 01-2 2H7a2 2 0 01-2-2V6m3 0V4a2 2 0 012-2h4a2 2 0 012 2v2"/></svg>
+                </button>
+            </div>
+        </div>`;
+    }).join('');
+}
+
+function simulatePostNow(postId) {
+    fetch(`/scheduled-posts/${postId}/post-now`, { method: 'POST' })
+        .then(r => r.json())
+        .then(() => {
+            showSuccess('Post published successfully! (Demo)');
+            loadScheduledPosts();
+        })
+        .catch(() => showError('Failed to post'));
+}
+
+function deleteScheduledPost(postId) {
+    fetch(`/scheduled-posts/${postId}`, { method: 'DELETE' })
+        .then(r => r.json())
+        .then(() => {
+            loadScheduledPosts();
+        })
+        .catch(() => showError('Failed to delete'));
+}
+
+// Auto-check for pending posts that are past their scheduled time
+let scheduleCheckInterval = null;
+function startScheduleChecker() {
+    if (scheduleCheckInterval) return;
+    scheduleCheckInterval = setInterval(() => {
+        fetch('/scheduled-posts')
+            .then(r => r.json())
+            .then(data => {
+                const now = new Date();
+                (data.posts || []).forEach(post => {
+                    if (post.status === 'pending' && new Date(post.scheduled_at) <= now) {
+                        simulatePostNow(post.id);
+                    }
+                });
+            })
+            .catch(() => {});
+    }, 30000); // check every 30s
+}
+
+// ── Settings ────────────────────────────────────────────────────
+
+// ── Upgrade Plan Modal ─────────────────────────────────────────
+
+let selectedUpgradePlan = null;
+
+function openUpgradeModal() {
+    document.getElementById('upgradeModal').classList.remove('hidden');
+    selectedUpgradePlan = null;
+    document.getElementById('requestUpgradeBtn').disabled = true;
+    document.getElementById('upgradeMsg').style.display = 'none';
+    // Highlight current plan
+    highlightCurrentPlan();
+}
+
+function closeUpgradeModal() {
+    document.getElementById('upgradeModal').classList.add('hidden');
+}
+
+function highlightCurrentPlan() {
+    const currentPlan = '{{ store.plan if store else "basic" }}';
+    document.querySelectorAll('.plan-card').forEach(c => {
+        c.style.borderColor = 'var(--border)';
+        c.style.boxShadow = 'none';
+    });
+    const currentCard = document.getElementById('planCard' + currentPlan.charAt(0).toUpperCase() + currentPlan.slice(1));
+    if (currentCard) {
+        currentCard.style.borderColor = 'var(--success)';
+        currentCard.querySelector('div').insertAdjacentHTML('beforeend', '');
+    }
+}
+
+function selectPlan(plan) {
+    const currentPlan = '{{ store.plan if store else "basic" }}';
+    selectedUpgradePlan = plan;
+
+    // Visual feedback
+    document.querySelectorAll('.plan-card').forEach(c => {
+        c.style.borderColor = 'var(--border)';
+        c.style.boxShadow = 'none';
+        c.style.transform = 'scale(1)';
+    });
+    const card = document.getElementById('planCard' + plan.charAt(0).toUpperCase() + plan.slice(1));
+    if (card) {
+        card.style.borderColor = 'var(--accent)';
+        card.style.boxShadow = '0 0 20px rgba(99,102,241,0.2)';
+        card.style.transform = 'scale(1.02)';
+    }
+
+    const btn = document.getElementById('requestUpgradeBtn');
+    if (plan === currentPlan) {
+        btn.disabled = true;
+        btn.textContent = 'Current Plan';
+    } else {
+        btn.disabled = false;
+        const planOrder = { free: 0, basic: 1, premium: 2 };
+        const isUpgrade = planOrder[plan] > planOrder[currentPlan];
+        btn.innerHTML = (isUpgrade ? '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg> ' : '') +
+            (isUpgrade ? 'Request Upgrade to ' : 'Switch to ') + plan.charAt(0).toUpperCase() + plan.slice(1);
+    }
+}
+
+async function requestUpgrade() {
+    if (!selectedUpgradePlan) return;
+    const btn = document.getElementById('requestUpgradeBtn');
+    btn.disabled = true;
+    btn.textContent = 'Sending request...';
+
+    try {
+        const res = await fetch('/api/request-upgrade', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ plan: selectedUpgradePlan }),
+        });
+        const data = await res.json();
+        const msg = document.getElementById('upgradeMsg');
+
+        if (data.status === 'success') {
+            msg.style.display = 'block';
+            msg.style.background = 'rgba(34,197,94,0.1)';
+            msg.style.color = '#4ade80';
+            msg.style.border = '1px solid rgba(34,197,94,0.2)';
+            msg.textContent = data.message || 'Upgrade request sent! Admin will review and approve it.';
+            btn.textContent = 'Request Sent';
+        } else {
+            msg.style.display = 'block';
+            msg.style.background = 'rgba(239,68,68,0.1)';
+            msg.style.color = '#f87171';
+            msg.style.border = '1px solid rgba(239,68,68,0.2)';
+            msg.textContent = data.error || 'Failed to send request';
+            btn.disabled = false;
+            btn.textContent = 'Retry';
+        }
+    } catch (e) {
+        btn.disabled = false;
+        btn.textContent = 'Retry';
+    }
+}
+
+function openSettings() {
+    document.getElementById('settingsModal').classList.remove('hidden');
+    loadApiKeyStatus();
+    loadStoreProfile();
+}
+
+function closeSettings() {
+    document.getElementById('settingsModal').classList.add('hidden');
+}
+
+// Close settings on overlay click
+document.addEventListener('click', (e) => {
+    if (e.target.id === 'settingsModal') closeSettings();
+});
+
+async function loadApiKeyStatus() {
+    try {
+        const resp = await fetch('/settings/api-key');
+        const data = await resp.json();
+        const badge = document.getElementById('settingsKeyBadge');
+        const text = document.getElementById('settingsKeyText');
+        if (data.has_key) {
+            badge.classList.add('active');
+            text.textContent = 'Connected: ' + data.masked_key;
+        } else {
+            badge.classList.remove('active');
+            text.textContent = 'Not configured';
+        }
+    } catch(e) {
+        document.getElementById('settingsKeyText').textContent = 'Error checking status';
+    }
+}
+
+function toggleKeyVisibility() {
+    const input = document.getElementById('settingsApiKeyInput');
+    input.type = input.type === 'password' ? 'text' : 'password';
+}
+
+async function saveApiKey() {
+    const key = document.getElementById('settingsApiKeyInput').value.trim();
+    if (!key) { showError('Please enter an API key'); return; }
+
+    const btn = document.getElementById('settingsSaveBtn');
+    btn.disabled = true;
+    btn.innerHTML = '<span class="spinner" style="display:inline-block;width:14px;height:14px;border:2px solid rgba(255,255,255,0.3);border-top-color:#fff;border-radius:50%;animation:spin 0.6s linear infinite;vertical-align:middle;margin-right:6px"></span>Saving...';
+
+    try {
+        const resp = await fetch('/settings/api-key', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ api_key: key })
+        });
+        const data = await resp.json();
+        if (data.status === 'success') {
+            showSuccess('API key updated successfully!');
+            document.getElementById('settingsApiKeyInput').value = '';
+            loadApiKeyStatus();
+        } else {
+            showError(data.error || 'Failed to save API key');
+        }
+    } catch(e) {
+        showError('Network error: ' + e.message);
+    } finally {
+        btn.disabled = false;
+        btn.innerHTML = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21H5a2 2 0 01-2-2V5a2 2 0 012-2h11l5 5v11a2 2 0 01-2 2z"/><polyline points="17 21 17 13 7 13 7 21"/><polyline points="7 3 7 8 15 8"/></svg>Save API Key';
+    }
+}
+
+// ── Success Toast ───────────────────────────────────────────────
+
+function showSuccess(msg) {
+    const toast = document.getElementById('successToast');
+    document.getElementById('successMsg').textContent = msg;
+    toast.style.display = 'flex';
+    setTimeout(() => toast.style.display = 'none', 3000);
+}
+
+// ── Error Toast ─────────────────────────────────────────────────
+
+function showError(msg) {
+    const toast = document.getElementById('errorToast');
+    document.getElementById('errorMsg').textContent = msg;
+    toast.style.display = 'flex';
+    setTimeout(() => toast.style.display = 'none', 5000);
+}
+
+// ── Init ────────────────────────────────────────────────────────
+
+document.addEventListener('DOMContentLoaded', () => {
+    // Parse initial hash
+    const h = location.hash.replace('#', '');
+    if (h) {
+        const [mod, tab] = h.split('/');
+        if (['festival', 'discount', 'generic'].includes(mod)) {
+            state.view = 'workspace';
+            state.module = mod;
+            state.tab = tab || 'create';
+        }
+    }
+    render();
+    updateUsage();
+    initStoreProfile();
+});
+</script>
+
+</body>
+</html>

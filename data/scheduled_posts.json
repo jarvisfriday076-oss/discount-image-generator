@@ -1,0 +1,42 @@
+[
+  {
+    "id": "970cc9ba",
+    "image": "test_image.png",
+    "platform": "instagram",
+    "caption": "Check out our amazing Flash Sale! 50% OFF premium spirits. Shop now! #deals #flashsale",
+    "scheduled_at": "2026-03-17T14:30:00",
+    "status": "posted",
+    "created_at": "2026-03-16T20:08:48.643337",
+    "posted_at": "2026-03-16T20:09:10.544867"
+  },
+  {
+    "id": "3ce660d3",
+    "image": "titos_1773666932_discount_promo.png",
+    "platform": "instagram",
+    "caption": "The perfect pour awaits. our premium selection \u2014 smooth, refined, extraordinary. #PremiumSpirits #LiquorStore #Cheers @broudys",
+    "scheduled_at": "2027-11-11T09:00:00",
+    "status": "pending",
+    "created_at": "2026-03-16T20:09:26.323567",
+    "posted_at": null
+  },
+  {
+    "id": "25796ec3",
+    "image": "titos_1773666932_discount_promo.png",
+    "platform": "instagram",
+    "caption": "The perfect pour awaits. our premium selection \u2014 smooth, refined, extraordinary. #PremiumSpirits #LiquorStore #Cheers @broudys",
+    "scheduled_at": "2026-03-16T14:39:36",
+    "status": "posted",
+    "created_at": "2026-03-16T20:09:36.629572",
+    "posted_at": "2026-03-16T20:09:36.686277"
+  },
+  {
+    "id": "611a778c",
+    "image": "titos_1773666932_discount_promo.png",
+    "platform": "instagram",
+    "caption": "The perfect pour awaits. our premium selection \u2014 smooth, refined, extraordinary. #PremiumSpirits #LiquorStore #Cheers @broudys",
+    "scheduled_at": "43333-12-04T14:02:00",
+    "status": "pending",
+    "created_at": "2026-03-16T20:09:54.834436",
+    "posted_at": null
+  }
+]

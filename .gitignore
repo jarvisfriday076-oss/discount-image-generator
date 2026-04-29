@@ -1,0 +1,30 @@
+# Secrets — never commit
+.env
+.env.local
+*.pem
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+
+# Local DB and runtime files (use a hosted DB in production)
+bottela.db
+*.sqlite
+*.sqlite3
+
+# Generated/uploaded content (use cloud storage in production)
+output/
+uploads/
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
