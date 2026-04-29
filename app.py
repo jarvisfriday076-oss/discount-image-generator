@@ -53,11 +53,9 @@ def create_app(config_name=None):
         return app.config.get("GEMINI_API_KEY", "")
 
     def check_generation_limit(store):
-        """Check if store can generate. Returns (allowed, error_msg)."""
+        """Limits removed — every store can generate."""
         if not store:
             return False, "No store configured."
-        if not store.can_generate():
-            return False, f"Weekly generation limit reached ({store.weekly_limit})."
         return True, ""
 
     # ── Landing / Workspace ────────────────────────────────────────
