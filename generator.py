@@ -159,6 +159,98 @@ def pil_to_base64(img: Image.Image) -> str:
     return base64.b64encode(buf.getvalue()).decode("utf-8")
 
 
+def _normalize_for_match(s: str) -> str:
+    """Lowercase + strip non-alphanumeric. For exact matching."""
+    import re
+    return re.sub(r'[^a-z0-9]', '', s.lower())
+
+
+def _tokenize_for_match(s: str) -> set:
+    """Lowercase tokens split on non-alphanumeric. For fuzzy token matching."""
+    import re
+    return {t for t in re.split(r'[^a-z0-9]+', s.lower()) if t}
+
+
+_PRODUCT_CATALOG_CACHE = None
+
+
+def _load_product_catalog() -> dict:
+    """Load product_catalog.csv once (lazy). Returns dict of name → {url, normalized, tokens}."""
+    global _PRODUCT_CATALOG_CACHE
+    if _PRODUCT_CATALOG_CACHE is not None:
+        return _PRODUCT_CATALOG_CACHE
+
+    import csv
+    catalog: dict = {}
+    csv_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data", "product_catalog.csv")
+    if not os.path.exists(csv_path):
+        logger.warning(f"Product catalog not found at {csv_path}")
+        _PRODUCT_CATALOG_CACHE = catalog
+        return catalog
+
+    try:
+        with open(csv_path, encoding="utf-8") as f:
+            reader = csv.DictReader(f)
+            for row in reader:
+                name = (row.get("ProductName") or "").strip()
+                url = (row.get("ProductPNGImg") or "").strip()
+                if name and url:
+                    catalog[name] = {
+                        "url": url,
+                        "normalized": _normalize_for_match(name),
+                        "tokens": _tokenize_for_match(name),
+                    }
+        logger.info(f"Loaded {len(catalog)} products from catalog")
+    except Exception as e:
+        logger.warning(f"Failed to load product catalog: {e}")
+
+    _PRODUCT_CATALOG_CACHE = catalog
+    return catalog
+
+
+def lookup_product_image_url(product_name: str) -> str:
+    """Look up a product in the local CSV catalog. Returns URL or empty string.
+
+    Match strategy (most specific to least):
+    1. Exact normalized match (case/punctuation-insensitive)
+    2. Query is a substring of catalog name (normalized)
+    3. All query tokens appear in catalog tokens
+    """
+    catalog = _load_product_catalog()
+    if not catalog or not product_name:
+        return ""
+
+    query_norm = _normalize_for_match(product_name)
+    query_tokens = _tokenize_for_match(product_name)
+    if not query_norm:
+        return ""
+
+    # Pass 1: exact normalized match
+    for name, info in catalog.items():
+        if info["normalized"] == query_norm:
+            logger.info(f"Catalog exact match for '{product_name}' -> '{name}'")
+            return info["url"]
+
+    # Pass 2: query contained in catalog name (normalized) — pick shortest (most specific)
+    candidates = [(name, info) for name, info in catalog.items() if query_norm in info["normalized"]]
+    if candidates:
+        candidates.sort(key=lambda x: len(x[1]["normalized"]))
+        name, info = candidates[0]
+        logger.info(f"Catalog substring match for '{product_name}' -> '{name}'")
+        return info["url"]
+
+    # Pass 3: all query tokens are in catalog tokens — pick shortest
+    if query_tokens:
+        candidates = [(name, info) for name, info in catalog.items() if query_tokens.issubset(info["tokens"])]
+        if candidates:
+            candidates.sort(key=lambda x: len(x[1]["tokens"]))
+            name, info = candidates[0]
+            logger.info(f"Catalog token match for '{product_name}' -> '{name}'")
+            return info["url"]
+
+    return ""
+
+
 def search_product_image_urls(product_name: str, max_results: int = 5) -> list[str]:
     """Scrape Google Images for candidate product photos."""
     import re
@@ -210,12 +302,26 @@ def verify_product_image_match(client: OpenAI, image_url: str, product_name: str
 
 
 def find_best_product_image_url(client: OpenAI, product_name: str, max_candidates: int = 3) -> str:
-    """Search and vision-verify candidates; return first verified URL, or empty string."""
+    """Find an authoritative product image.
+
+    Order of attempts:
+    1. Local CSV catalog (data/product_catalog.csv) — authoritative, no vision check needed.
+    2. Web search + GPT-4o-mini vision verify.
+
+    Returns URL on success, empty string if nothing found.
+    """
+    # 1. Catalog first (cheapest, most reliable)
+    catalog_url = lookup_product_image_url(product_name)
+    if catalog_url:
+        return catalog_url
+
+    # 2. Fall back to web search with vision verify
     for url in search_product_image_urls(product_name, max_results=max_candidates):
         if verify_product_image_match(client, url, product_name):
             logger.info(f"Verified product image for {product_name}: {url}")
             return url
-    logger.info(f"No verified product image found for {product_name}")
+
+    logger.info(f"No product image found for {product_name} (catalog + web both empty)")
     return ""
 
 

@@ -140,7 +140,11 @@ def create_app(config_name=None):
                 from generator import find_best_product_image_url
                 product_image_url = find_best_product_image_url(client, product_name)
                 if not product_image_url:
-                    logger.info(f"Auto-search found no verified image for {product_name}; generating from text only")
+                    return jsonify({
+                        "error": f"Couldn't find an image for '{product_name}'. "
+                                 f"Please upload a product image or check the spelling. "
+                                 f"We don't generate fake bottles when no real reference is available."
+                    }), 400
 
             path = generate_single_image(
                 client=client,
